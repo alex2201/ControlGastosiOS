@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDF609F02516FFEF005E2297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF609EF2516FFEF005E2297 /* AppDelegate.swift */; };
+		BDF609F22516FFEF005E2297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF609F12516FFEF005E2297 /* SceneDelegate.swift */; };
+		BDF609F42516FFEF005E2297 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF609F32516FFEF005E2297 /* ViewController.swift */; };
+		BDF609F72516FFEF005E2297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF609F52516FFEF005E2297 /* Main.storyboard */; };
+		BDF609FA2516FFEF005E2297 /* Organizador_Gastos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDF609F82516FFEF005E2297 /* Organizador_Gastos.xcdatamodeld */; };
+		BDF609FC2516FFF0005E2297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF609FB2516FFF0005E2297 /* Assets.xcassets */; };
+		BDF609FF2516FFF0005E2297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF609FD2516FFF0005E2297 /* LaunchScreen.storyboard */; };
+		BDF60A0A2516FFF0005E2297 /* Organizador_GastosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A092516FFF0005E2297 /* Organizador_GastosTests.swift */; };
+		BDF60A152516FFF0005E2297 /* Organizador_GastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A142516FFF0005E2297 /* Organizador_GastosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDF60A062516FFF0005E2297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF609E42516FFEF005E2297 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF609EB2516FFEF005E2297;
+			remoteInfo = "Organizador Gastos";
+		};
+		BDF60A112516FFF0005E2297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF609E42516FFEF005E2297 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF609EB2516FFEF005E2297;
+			remoteInfo = "Organizador Gastos";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDF609EC2516FFEF005E2297 /* Organizador Gastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Organizador Gastos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF609EF2516FFEF005E2297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDF609F12516FFEF005E2297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDF609F32516FFEF005E2297 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDF609F62516FFEF005E2297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDF609F92516FFEF005E2297 /* Organizador_Gastos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Organizador_Gastos.xcdatamodel; sourceTree = "<group>"; };
+		BDF609FB2516FFF0005E2297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDF609FE2516FFF0005E2297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDF60A002516FFF0005E2297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF60A052516FFF0005E2297 /* Organizador GastosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Organizador GastosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF60A092516FFF0005E2297 /* Organizador_GastosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizador_GastosTests.swift; sourceTree = "<group>"; };
+		BDF60A0B2516FFF0005E2297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF60A102516FFF0005E2297 /* Organizador GastosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Organizador GastosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF60A142516FFF0005E2297 /* Organizador_GastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizador_GastosUITests.swift; sourceTree = "<group>"; };
+		BDF60A162516FFF0005E2297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDF609E92516FFEF005E2297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF60A022516FFF0005E2297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF60A0D2516FFF0005E2297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDF609E32516FFEF005E2297 = {
+			isa = PBXGroup;
+			children = (
+				BDF609EE2516FFEF005E2297 /* Organizador Gastos */,
+				BDF60A082516FFF0005E2297 /* Organizador GastosTests */,
+				BDF60A132516FFF0005E2297 /* Organizador GastosUITests */,
+				BDF609ED2516FFEF005E2297 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF609ED2516FFEF005E2297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF609EC2516FFEF005E2297 /* Organizador Gastos.app */,
+				BDF60A052516FFF0005E2297 /* Organizador GastosTests.xctest */,
+				BDF60A102516FFF0005E2297 /* Organizador GastosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDF609EE2516FFEF005E2297 /* Organizador Gastos */ = {
+			isa = PBXGroup;
+			children = (
+				BDF609EF2516FFEF005E2297 /* AppDelegate.swift */,
+				BDF609F12516FFEF005E2297 /* SceneDelegate.swift */,
+				BDF609F32516FFEF005E2297 /* ViewController.swift */,
+				BDF609F52516FFEF005E2297 /* Main.storyboard */,
+				BDF609FB2516FFF0005E2297 /* Assets.xcassets */,
+				BDF609FD2516FFF0005E2297 /* LaunchScreen.storyboard */,
+				BDF60A002516FFF0005E2297 /* Info.plist */,
+				BDF609F82516FFEF005E2297 /* Organizador_Gastos.xcdatamodeld */,
+			);
+			path = "Organizador Gastos";
+			sourceTree = "<group>";
+		};
+		BDF60A082516FFF0005E2297 /* Organizador GastosTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF60A092516FFF0005E2297 /* Organizador_GastosTests.swift */,
+				BDF60A0B2516FFF0005E2297 /* Info.plist */,
+			);
+			path = "Organizador GastosTests";
+			sourceTree = "<group>";
+		};
+		BDF60A132516FFF0005E2297 /* Organizador GastosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF60A142516FFF0005E2297 /* Organizador_GastosUITests.swift */,
+				BDF60A162516FFF0005E2297 /* Info.plist */,
+			);
+			path = "Organizador GastosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDF609EB2516FFEF005E2297 /* Organizador Gastos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF60A192516FFF0005E2297 /* Build configuration list for PBXNativeTarget "Organizador Gastos" */;
+			buildPhases = (
+				BDF609E82516FFEF005E2297 /* Sources */,
+				BDF609E92516FFEF005E2297 /* Frameworks */,
+				BDF609EA2516FFEF005E2297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Organizador Gastos";
+			productName = "Organizador Gastos";
+			productReference = BDF609EC2516FFEF005E2297 /* Organizador Gastos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDF60A042516FFF0005E2297 /* Organizador GastosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF60A1C2516FFF0005E2297 /* Build configuration list for PBXNativeTarget "Organizador GastosTests" */;
+			buildPhases = (
+				BDF60A012516FFF0005E2297 /* Sources */,
+				BDF60A022516FFF0005E2297 /* Frameworks */,
+				BDF60A032516FFF0005E2297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF60A072516FFF0005E2297 /* PBXTargetDependency */,
+			);
+			name = "Organizador GastosTests";
+			productName = "Organizador GastosTests";
+			productReference = BDF60A052516FFF0005E2297 /* Organizador GastosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDF60A0F2516FFF0005E2297 /* Organizador GastosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF60A1F2516FFF0005E2297 /* Build configuration list for PBXNativeTarget "Organizador GastosUITests" */;
+			buildPhases = (
+				BDF60A0C2516FFF0005E2297 /* Sources */,
+				BDF60A0D2516FFF0005E2297 /* Frameworks */,
+				BDF60A0E2516FFF0005E2297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF60A122516FFF0005E2297 /* PBXTargetDependency */,
+			);
+			name = "Organizador GastosUITests";
+			productName = "Organizador GastosUITests";
+			productReference = BDF60A102516FFF0005E2297 /* Organizador GastosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF609E42516FFEF005E2297 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					BDF609EB2516FFEF005E2297 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					BDF60A042516FFF0005E2297 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = BDF609EB2516FFEF005E2297;
+					};
+					BDF60A0F2516FFF0005E2297 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = BDF609EB2516FFEF005E2297;
+					};
+				};
+			};
+			buildConfigurationList = BDF609E72516FFEF005E2297 /* Build configuration list for PBXProject "Organizador Gastos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDF609E32516FFEF005E2297;
+			productRefGroup = BDF609ED2516FFEF005E2297 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDF609EB2516FFEF005E2297 /* Organizador Gastos */,
+				BDF60A042516FFF0005E2297 /* Organizador GastosTests */,
+				BDF60A0F2516FFF0005E2297 /* Organizador GastosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF609EA2516FFEF005E2297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF609FF2516FFF0005E2297 /* LaunchScreen.storyboard in Resources */,
+				BDF609FC2516FFF0005E2297 /* Assets.xcassets in Resources */,
+				BDF609F72516FFEF005E2297 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF60A032516FFF0005E2297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF60A0E2516FFF0005E2297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDF609E82516FFEF005E2297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF609F42516FFEF005E2297 /* ViewController.swift in Sources */,
+				BDF609F02516FFEF005E2297 /* AppDelegate.swift in Sources */,
+				BDF609F22516FFEF005E2297 /* SceneDelegate.swift in Sources */,
+				BDF609FA2516FFEF005E2297 /* Organizador_Gastos.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF60A012516FFF0005E2297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF60A0A2516FFF0005E2297 /* Organizador_GastosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF60A0C2516FFF0005E2297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF60A152516FFF0005E2297 /* Organizador_GastosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDF60A072516FFF0005E2297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF609EB2516FFEF005E2297 /* Organizador Gastos */;
+			targetProxy = BDF60A062516FFF0005E2297 /* PBXContainerItemProxy */;
+		};
+		BDF60A122516FFF0005E2297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF609EB2516FFEF005E2297 /* Organizador Gastos */;
+			targetProxy = BDF60A112516FFF0005E2297 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDF609F52516FFEF005E2297 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF609F62516FFEF005E2297 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDF609FD2516FFF0005E2297 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF609FE2516FFF0005E2297 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDF60A172516FFF0005E2297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDF60A182516FFF0005E2297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF60A1A2516FFF0005E2297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S3T54XF2K;
+				INFOPLIST_FILE = "Organizador Gastos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alcesta.finance.Organizador-Gastos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDF60A1B2516FFF0005E2297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S3T54XF2K;
+				INFOPLIST_FILE = "Organizador Gastos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alcesta.finance.Organizador-Gastos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDF60A1D2516FFF0005E2297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S3T54XF2K;
+				INFOPLIST_FILE = "Organizador GastosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alcesta.finance.Organizador-GastosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Organizador Gastos.app/Organizador Gastos";
+			};
+			name = Debug;
+		};
+		BDF60A1E2516FFF0005E2297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S3T54XF2K;
+				INFOPLIST_FILE = "Organizador GastosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alcesta.finance.Organizador-GastosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Organizador Gastos.app/Organizador Gastos";
+			};
+			name = Release;
+		};
+		BDF60A202516FFF0005E2297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S3T54XF2K;
+				INFOPLIST_FILE = "Organizador GastosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alcesta.finance.Organizador-GastosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Organizador Gastos";
+			};
+			name = Debug;
+		};
+		BDF60A212516FFF0005E2297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S3T54XF2K;
+				INFOPLIST_FILE = "Organizador GastosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alcesta.finance.Organizador-GastosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Organizador Gastos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDF609E72516FFEF005E2297 /* Build configuration list for PBXProject "Organizador Gastos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF60A172516FFF0005E2297 /* Debug */,
+				BDF60A182516FFF0005E2297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF60A192516FFF0005E2297 /* Build configuration list for PBXNativeTarget "Organizador Gastos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF60A1A2516FFF0005E2297 /* Debug */,
+				BDF60A1B2516FFF0005E2297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF60A1C2516FFF0005E2297 /* Build configuration list for PBXNativeTarget "Organizador GastosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF60A1D2516FFF0005E2297 /* Debug */,
+				BDF60A1E2516FFF0005E2297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF60A1F2516FFF0005E2297 /* Build configuration list for PBXNativeTarget "Organizador GastosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF60A202516FFF0005E2297 /* Debug */,
+				BDF60A212516FFF0005E2297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDF609F82516FFEF005E2297 /* Organizador_Gastos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDF609F92516FFEF005E2297 /* Organizador_Gastos.xcdatamodel */,
+			);
+			currentVersion = BDF609F92516FFEF005E2297 /* Organizador_Gastos.xcdatamodel */;
+			path = Organizador_Gastos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BDF609E42516FFEF005E2297 /* Project object */;
+}
