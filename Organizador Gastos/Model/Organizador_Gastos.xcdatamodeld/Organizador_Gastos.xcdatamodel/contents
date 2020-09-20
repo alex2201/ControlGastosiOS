@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Categoria" representedClassName="Categoria" syncable="YES" codeGenerationType="class">
+        <attribute name="nombre" attributeType="String"/>
+        <relationship name="movimientos" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Movimiento" inverseName="categoria" inverseEntity="Movimiento"/>
+    </entity>
+    <entity name="MedioPago" representedClassName="MedioPago" syncable="YES" codeGenerationType="class">
+        <attribute name="nombre" attributeType="String"/>
+        <relationship name="movimientos" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Movimiento" inverseName="medioPago" inverseEntity="Movimiento"/>
+    </entity>
+    <entity name="Movimiento" representedClassName="Movimiento" syncable="YES" codeGenerationType="class">
+        <attribute name="descripcion" attributeType="String"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="monto" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="categoria" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Categoria" inverseName="movimientos" inverseEntity="Categoria"/>
+        <relationship name="medioPago" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MedioPago" inverseName="movimientos" inverseEntity="MedioPago"/>
+    </entity>
+    <elements>
+        <element name="Categoria" positionX="-455.67578125" positionY="-64.66796875" width="128" height="73"/>
+        <element name="Movimiento" positionX="-73.69140625" positionY="-179.09375" width="128" height="118"/>
+        <element name="MedioPago" positionX="189.54296875" positionY="8.82421875" width="128" height="73"/>
+    </elements>
+</model>
