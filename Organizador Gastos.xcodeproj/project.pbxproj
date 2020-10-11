@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD30A6252532CC2000FD1AA5 /* MovimientosTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30A6232532CC2000FD1AA5 /* MovimientosTableViewItem.swift */; };
+		BD30A6262532CC2000FD1AA5 /* MovimientosTableViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD30A6242532CC2000FD1AA5 /* MovimientosTableViewItem.xib */; };
+		BD30A62B2532CE8700FD1AA5 /* ListaMovimientosVC+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30A62A2532CE8700FD1AA5 /* ListaMovimientosVC+UITableViewDelegate.swift */; };
+		BD30A6352532DF6000FD1AA5 /* NuevoMovimientoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30A6342532DF6000FD1AA5 /* NuevoMovimientoVC.swift */; };
 		BD39507F25171BE000B45D03 /* PrincipalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39507E25171BE000B45D03 /* PrincipalVC.swift */; };
+		BD39509F251723EB00B45D03 /* SentenceSequenceStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39509E251723EB00B45D03 /* SentenceSequenceStringValidator.swift */; };
+		BD884FC92532C36200FA0E18 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD884FC82532C36200FA0E18 /* Coordinator.swift */; };
+		BD884FCE2532C41700FA0E18 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD884FCD2532C41700FA0E18 /* Storyboarded.swift */; };
+		BD884FD32532C6BF00FA0E18 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD884FD22532C6BF00FA0E18 /* MainCoordinator.swift */; };
+		BD884FDE2532CAD800FA0E18 /* Movimientos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD884FDD2532CAD800FA0E18 /* Movimientos.storyboard */; };
+		BD884FE32532CAF400FA0E18 /* ListaMovimientosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD884FE22532CAF400FA0E18 /* ListaMovimientosVC.swift */; };
 		BDF609F02516FFEF005E2297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF609EF2516FFEF005E2297 /* AppDelegate.swift */; };
 		BDF609F22516FFEF005E2297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF609F12516FFEF005E2297 /* SceneDelegate.swift */; };
 		BDF609F72516FFEF005E2297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF609F52516FFEF005E2297 /* Main.storyboard */; };
@@ -55,7 +65,7 @@
 		BDF60AB725170415005E2297 /* RoundedCornersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7725170415005E2297 /* RoundedCornersViewController.swift */; };
 		BDF60AB825170415005E2297 /* AttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7925170415005E2297 /* AttributedLabel.swift */; };
 		BDF60AB925170415005E2297 /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7B25170415005E2297 /* TextFieldValidator.swift */; };
-		BDF60ABA25170415005E2297 /* AdvancedTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7C25170415005E2297 /* AdvancedTextFieldView.swift */; };
+		BDF60ABA25170415005E2297 /* AdvancedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7C25170415005E2297 /* AdvancedTextField.swift */; };
 		BDF60ABB25170415005E2297 /* UIToolbarTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7D25170415005E2297 /* UIToolbarTextField.swift */; };
 		BDF60ABC25170415005E2297 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7E25170415005E2297 /* DesignableTextField.swift */; };
 		BDF60ABD25170415005E2297 /* AdvancedTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF60A7F25170415005E2297 /* AdvancedTextFieldView.xib */; };
@@ -95,7 +105,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD30A6232532CC2000FD1AA5 /* MovimientosTableViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientosTableViewItem.swift; sourceTree = "<group>"; };
+		BD30A6242532CC2000FD1AA5 /* MovimientosTableViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovimientosTableViewItem.xib; sourceTree = "<group>"; };
+		BD30A62A2532CE8700FD1AA5 /* ListaMovimientosVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListaMovimientosVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		BD30A6342532DF6000FD1AA5 /* NuevoMovimientoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoMovimientoVC.swift; sourceTree = "<group>"; };
 		BD39507E25171BE000B45D03 /* PrincipalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalVC.swift; sourceTree = "<group>"; };
+		BD39509E251723EB00B45D03 /* SentenceSequenceStringValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceSequenceStringValidator.swift; sourceTree = "<group>"; };
+		BD884FC82532C36200FA0E18 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BD884FCD2532C41700FA0E18 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		BD884FD22532C6BF00FA0E18 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		BD884FDD2532CAD800FA0E18 /* Movimientos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movimientos.storyboard; sourceTree = "<group>"; };
+		BD884FE22532CAF400FA0E18 /* ListaMovimientosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaMovimientosVC.swift; sourceTree = "<group>"; };
 		BDF609EC2516FFEF005E2297 /* Organizador Gastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Organizador Gastos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF609EF2516FFEF005E2297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF609F12516FFEF005E2297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,7 +169,7 @@
 		BDF60A7725170415005E2297 /* RoundedCornersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersViewController.swift; sourceTree = "<group>"; };
 		BDF60A7925170415005E2297 /* AttributedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedLabel.swift; sourceTree = "<group>"; };
 		BDF60A7B25170415005E2297 /* TextFieldValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
-		BDF60A7C25170415005E2297 /* AdvancedTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedTextFieldView.swift; sourceTree = "<group>"; };
+		BDF60A7C25170415005E2297 /* AdvancedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedTextField.swift; sourceTree = "<group>"; };
 		BDF60A7D25170415005E2297 /* UIToolbarTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIToolbarTextField.swift; sourceTree = "<group>"; };
 		BDF60A7E25170415005E2297 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		BDF60A7F25170415005E2297 /* AdvancedTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedTextFieldView.xib; sourceTree = "<group>"; };
@@ -196,6 +216,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD30A6222532CBFE00FD1AA5 /* MovimientosTableViewItem */ = {
+			isa = PBXGroup;
+			children = (
+				BD30A6232532CC2000FD1AA5 /* MovimientosTableViewItem.swift */,
+				BD30A6242532CC2000FD1AA5 /* MovimientosTableViewItem.xib */,
+			);
+			path = MovimientosTableViewItem;
+			sourceTree = "<group>";
+		};
+		BD30A6322532DF4C00FD1AA5 /* ListaMovimientos */ = {
+			isa = PBXGroup;
+			children = (
+				BD884FE22532CAF400FA0E18 /* ListaMovimientosVC.swift */,
+				BD30A62A2532CE8700FD1AA5 /* ListaMovimientosVC+UITableViewDelegate.swift */,
+			);
+			path = ListaMovimientos;
+			sourceTree = "<group>";
+		};
+		BD30A6332532DF5400FD1AA5 /* NuevoMovimiento */ = {
+			isa = PBXGroup;
+			children = (
+				BD30A6342532DF6000FD1AA5 /* NuevoMovimientoVC.swift */,
+			);
+			path = NuevoMovimiento;
+			sourceTree = "<group>";
+		};
+		BD884FC72532C35100FA0E18 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				BD884FC82532C36200FA0E18 /* Coordinator.swift */,
+				BD884FCD2532C41700FA0E18 /* Storyboarded.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		BD884FDA2532CAB500FA0E18 /* Movimientos */ = {
+			isa = PBXGroup;
+			children = (
+				BD884FDB2532CABF00FA0E18 /* Controller */,
+				BD884FDC2532CAC500FA0E18 /* View */,
+			);
+			path = Movimientos;
+			sourceTree = "<group>";
+		};
+		BD884FDB2532CABF00FA0E18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD30A6332532DF5400FD1AA5 /* NuevoMovimiento */,
+				BD30A6322532DF4C00FD1AA5 /* ListaMovimientos */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD884FDC2532CAC500FA0E18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD30A6222532CBFE00FD1AA5 /* MovimientosTableViewItem */,
+				BD884FDD2532CAD800FA0E18 /* Movimientos.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BDF609E32516FFEF005E2297 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF60A4825170415005E2297 /* Core */,
+				BD884FC72532C35100FA0E18 /* Misc */,
 				BDF60A2D2517003B005E2297 /* Model */,
 				BDF60AD5251704AC005E2297 /* Modules */,
 				BDF60A2B25170022005E2297 /* Resources */,
@@ -301,14 +384,14 @@
 			isa = PBXGroup;
 			children = (
 				BDF60A4A25170415005E2297 /* Constants.swift */,
-				BDF60A4B25170415005E2297 /* Utilities.swift */,
+				BDF60A5C25170415005E2297 /* FirebaseLoginType.swift */,
+				BDF60A5B25170415005E2297 /* Globals.swift */,
 				BDF60A4C25170415005E2297 /* Session.swift */,
+				BDF60A5E25170415005E2297 /* StringFormatter.swift */,
+				BDF60A4B25170415005E2297 /* Utilities.swift */,
+				BDF60A5D25170415005E2297 /* UtilitiesStyles.swift */,
 				BDF60A4D25170415005E2297 /* Extension */,
 				BDF60A4F25170415005E2297 /* StringValidator */,
-				BDF60A5B25170415005E2297 /* Globals.swift */,
-				BDF60A5C25170415005E2297 /* FirebaseLoginType.swift */,
-				BDF60A5D25170415005E2297 /* UtilitiesStyles.swift */,
-				BDF60A5E25170415005E2297 /* StringFormatter.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -326,6 +409,7 @@
 			children = (
 				BDF60A5025170415005E2297 /* StringValidator.swift */,
 				BDF60A5125170415005E2297 /* LenghtStringValidator.swift */,
+				BD39509E251723EB00B45D03 /* SentenceSequenceStringValidator.swift */,
 				BDF60A5225170415005E2297 /* EmailStringValidator.swift */,
 				BDF60A5325170415005E2297 /* DecimalStringValidator.swift */,
 				BDF60A5425170415005E2297 /* TelephoneStringValidator.swift */,
@@ -429,7 +513,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF60A7B25170415005E2297 /* TextFieldValidator.swift */,
-				BDF60A7C25170415005E2297 /* AdvancedTextFieldView.swift */,
+				BDF60A7C25170415005E2297 /* AdvancedTextField.swift */,
 				BDF60A7D25170415005E2297 /* UIToolbarTextField.swift */,
 				BDF60A7E25170415005E2297 /* DesignableTextField.swift */,
 				BDF60A7F25170415005E2297 /* AdvancedTextFieldView.xib */,
@@ -486,6 +570,7 @@
 		BDF60AD5251704AC005E2297 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BD884FDA2532CAB500FA0E18 /* Movimientos */,
 				BDF60AD6251704B6005E2297 /* Principal */,
 			);
 			path = Modules;
@@ -496,6 +581,7 @@
 			children = (
 				BDF60AD8251704CC005E2297 /* Controller */,
 				BDF60AD7251704C6005E2297 /* View */,
+				BD884FD22532C6BF00FA0E18 /* MainCoordinator.swift */,
 			);
 			path = Principal;
 			sourceTree = "<group>";
@@ -620,9 +706,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF60ADF25170500005E2297 /* Colors.xcassets in Resources */,
+				BD30A6262532CC2000FD1AA5 /* MovimientosTableViewItem.xib in Resources */,
 				BDF60AE425170716005E2297 /* Images.xcassets in Resources */,
 				BDF60ABD25170415005E2297 /* AdvancedTextFieldView.xib in Resources */,
 				BDF60AAF25170415005E2297 /* LoadingVC.xib in Resources */,
+				BD884FDE2532CAD800FA0E18 /* Movimientos.storyboard in Resources */,
 				BDF609FF2516FFF0005E2297 /* LaunchScreen.storyboard in Resources */,
 				BDF609FC2516FFF0005E2297 /* Assets.xcassets in Resources */,
 				BDF609F72516FFEF005E2297 /* Main.storyboard in Resources */,
@@ -661,27 +749,32 @@
 				BDF60AB025170415005E2297 /* LoadingVC.swift in Sources */,
 				BDF609F22516FFEF005E2297 /* SceneDelegate.swift in Sources */,
 				BD39507F25171BE000B45D03 /* PrincipalVC.swift in Sources */,
+				BD39509F251723EB00B45D03 /* SentenceSequenceStringValidator.swift in Sources */,
 				BDF60AB325170415005E2297 /* UITextFieldExtension.swift in Sources */,
 				BDF60AA125170415005E2297 /* EmptyStringValidator.swift in Sources */,
 				BDF60AAE25170415005E2297 /* BaseViewController.swift in Sources */,
 				BDF60AA825170415005E2297 /* ImageFetcher.swift in Sources */,
+				BD884FD32532C6BF00FA0E18 /* MainCoordinator.swift in Sources */,
 				BDF60A9525170415005E2297 /* Session.swift in Sources */,
 				BDF60AB925170415005E2297 /* TextFieldValidator.swift in Sources */,
 				BDF60AB225170415005E2297 /* UIScrollView.swift in Sources */,
 				BDF60AC325170415005E2297 /* CarrouselCell.swift in Sources */,
 				BDF60AB425170415005E2297 /* UIStackViewExtension.swift in Sources */,
+				BD884FC92532C36200FA0E18 /* Coordinator.swift in Sources */,
 				BDF60AA925170415005E2297 /* Cache.swift in Sources */,
 				BDF60A9C25170415005E2297 /* LogicalStringValidator.swift in Sources */,
 				BDF60AA225170415005E2297 /* Globals.swift in Sources */,
+				BD30A62B2532CE8700FD1AA5 /* ListaMovimientosVC+UITableViewDelegate.swift in Sources */,
 				BDF60AB125170415005E2297 /* AlertBuilder.swift in Sources */,
 				BDF60AB625170415005E2297 /* UITapGestureRecognizer.swift in Sources */,
+				BD30A6252532CC2000FD1AA5 /* MovimientosTableViewItem.swift in Sources */,
 				BDF609FA2516FFEF005E2297 /* Organizador_Gastos.xcdatamodeld in Sources */,
 				BDF60AA425170415005E2297 /* UtilitiesStyles.swift in Sources */,
 				BDF60AA625170415005E2297 /* AsyncHttpFetcher.swift in Sources */,
 				BDF60ABC25170415005E2297 /* DesignableTextField.swift in Sources */,
 				BDF60AB825170415005E2297 /* AttributedLabel.swift in Sources */,
 				BDF60AA525170415005E2297 /* StringFormatter.swift in Sources */,
-				BDF60ABA25170415005E2297 /* AdvancedTextFieldView.swift in Sources */,
+				BDF60ABA25170415005E2297 /* AdvancedTextField.swift in Sources */,
 				BDF60A9425170415005E2297 /* Utilities.swift in Sources */,
 				BDF60AC825170415005E2297 /* ApiQueryManager.swift in Sources */,
 				BDF60A9A25170415005E2297 /* DecimalStringValidator.swift in Sources */,
@@ -695,9 +788,11 @@
 				BDF60AA325170415005E2297 /* FirebaseLoginType.swift in Sources */,
 				BDF60AAD25170415005E2297 /* CarrouselViewController.swift in Sources */,
 				BDF60ACA25170415005E2297 /* ApiQueryComposer.swift in Sources */,
+				BD884FE32532CAF400FA0E18 /* ListaMovimientosVC.swift in Sources */,
 				BDF60AC025170415005E2297 /* AttributedView.swift in Sources */,
 				BDF60AC525170415005E2297 /* GenericApi.swift in Sources */,
 				BDF60AAB25170415005E2297 /* CarrouselImageFetcher.swift in Sources */,
+				BD884FCE2532C41700FA0E18 /* Storyboarded.swift in Sources */,
 				BDF60A9625170415005E2297 /* UserDefaultsExtension.swift in Sources */,
 				BDF60A9825170415005E2297 /* LenghtStringValidator.swift in Sources */,
 				BDF60ABE25170415005E2297 /* UserData.swift in Sources */,
@@ -709,6 +804,7 @@
 				BDF60A9325170415005E2297 /* Constants.swift in Sources */,
 				BDF60AC625170415005E2297 /* ApiManagerDelegate.swift in Sources */,
 				BDF60AB725170415005E2297 /* RoundedCornersViewController.swift in Sources */,
+				BD30A6352532DF6000FD1AA5 /* NuevoMovimientoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

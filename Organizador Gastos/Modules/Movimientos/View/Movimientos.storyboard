@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lista Movimientos-->
+        <scene sceneID="A4M-mW-MZQ">
+            <objects>
+                <viewController storyboardIdentifier="ListaMovimientosVC" title="Lista Movimientos" id="1iI-K2-VVS" customClass="ListaMovimientosVC" customModule="Organizador_Gastos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gD8-Ae-suu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9Z-o4-74a" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PRs-bV-T3z">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="1iI-K2-VVS" id="00l-H0-WHf"/>
+                                            <outlet property="delegate" destination="1iI-K2-VVS" id="6hM-eE-z6h"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PRs-bV-T3z" firstAttribute="top" secondItem="d9Z-o4-74a" secondAttribute="top" id="2TR-5E-SIY"/>
+                                    <constraint firstItem="PRs-bV-T3z" firstAttribute="leading" secondItem="d9Z-o4-74a" secondAttribute="leading" id="Rur-5g-HZ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="PRs-bV-T3z" secondAttribute="bottom" id="WI4-hJ-d4V"/>
+                                    <constraint firstAttribute="trailing" secondItem="PRs-bV-T3z" secondAttribute="trailing" id="xUI-85-QCY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XgU-wZ-zHh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d9Z-o4-74a" firstAttribute="leading" secondItem="XgU-wZ-zHh" secondAttribute="leading" id="Xuc-NG-6OA"/>
+                            <constraint firstItem="XgU-wZ-zHh" firstAttribute="trailing" secondItem="d9Z-o4-74a" secondAttribute="trailing" id="Xva-e7-b2A"/>
+                            <constraint firstItem="d9Z-o4-74a" firstAttribute="top" secondItem="XgU-wZ-zHh" secondAttribute="top" id="fmo-Iw-JNt"/>
+                            <constraint firstItem="XgU-wZ-zHh" firstAttribute="bottom" secondItem="d9Z-o4-74a" secondAttribute="bottom" id="rbD-bG-44a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lista Movimientos" id="ut3-ey-uiX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OY1-ep-tXR">
+                            <connections>
+                                <action selector="addButtonAction:" destination="1iI-K2-VVS" id="D2m-ga-jzy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="PRs-bV-T3z" id="feI-cA-BYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LCX-xp-cXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.76811594202911" y="122.54464285714285"/>
+        </scene>
+        <!--NuevoMovimiento-->
+        <scene sceneID="hcM-xN-7vG">
+            <objects>
+                <viewController storyboardIdentifier="NuevoMovimientoVC" id="zoz-dM-bvO" customClass="NuevoMovimientoVC" customModule="Organizador_Gastos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N34-rc-qF9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bf9-dN-Tjb" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hq-HN-cVp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-3a-Rj6" userLabel="ContentView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ear-LI-g85">
+                                                        <rect key="frame" x="32" y="40" width="350" height="245"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atj-F9-9do" customClass="AdvancedTextField" customModule="Organizador_Gastos" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="75"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="75" id="w1P-Sx-1os"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="Descripción"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Descripción"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorText" value="Este campo es requerido"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlX-qF-UMs" customClass="AdvancedTextField" customModule="Organizador_Gastos" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="85" width="350" height="75"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="75" id="NvC-hZ-jUC"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="Fecha"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Fecha"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorText" value="Este campo es requerido"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nin-ss-4tX" customClass="AdvancedTextField" customModule="Organizador_Gastos" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="170" width="350" height="75"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="75" id="hQv-2l-Cyc"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="Monto"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Monto"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorText" value="Este campo es requerido"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="7ud-I0-wav">
+                                                        <rect key="frame" x="0.0" y="339" width="414" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <locale key="locale" localeIdentifier="es_MX"/>
+                                                    </datePicker>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ear-LI-g85" firstAttribute="top" secondItem="KQg-3a-Rj6" secondAttribute="topMargin" id="5ef-J0-w7l"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="Ear-LI-g85" secondAttribute="trailing" constant="24" id="Hzm-LI-FeA"/>
+                                                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Ear-LI-g85" secondAttribute="bottom" id="f77-g5-adC"/>
+                                                    <constraint firstItem="Ear-LI-g85" firstAttribute="leading" secondItem="KQg-3a-Rj6" secondAttribute="leadingMargin" constant="24" id="qKK-ss-m73"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="40" left="8" bottom="8" right="8"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="KQg-3a-Rj6" firstAttribute="height" secondItem="OmZ-Ki-sx1" secondAttribute="height" priority="250" id="EX5-Mh-M3H"/>
+                                            <constraint firstItem="KQg-3a-Rj6" firstAttribute="width" secondItem="OmZ-Ki-sx1" secondAttribute="width" id="QW9-6G-8Fd"/>
+                                            <constraint firstItem="KQg-3a-Rj6" firstAttribute="trailing" secondItem="g3j-2W-UnX" secondAttribute="trailing" id="nQB-oi-x5O"/>
+                                            <constraint firstItem="KQg-3a-Rj6" firstAttribute="bottom" secondItem="g3j-2W-UnX" secondAttribute="bottom" id="pkv-D1-H7W"/>
+                                            <constraint firstItem="g3j-2W-UnX" firstAttribute="leading" secondItem="KQg-3a-Rj6" secondAttribute="leading" id="tgD-Tx-VCl"/>
+                                            <constraint firstItem="g3j-2W-UnX" firstAttribute="top" secondItem="KQg-3a-Rj6" secondAttribute="top" id="zql-ca-Br8"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="g3j-2W-UnX"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="OmZ-Ki-sx1"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6hq-HN-cVp" secondAttribute="trailing" id="6aw-zE-Llz"/>
+                                    <constraint firstItem="6hq-HN-cVp" firstAttribute="top" secondItem="Bf9-dN-Tjb" secondAttribute="top" id="Zs7-cF-2fN"/>
+                                    <constraint firstAttribute="bottom" secondItem="6hq-HN-cVp" secondAttribute="bottom" id="f2A-7W-wp2"/>
+                                    <constraint firstItem="6hq-HN-cVp" firstAttribute="leading" secondItem="Bf9-dN-Tjb" secondAttribute="leading" id="fXt-kX-4Zm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CAt-cf-t0s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CAt-cf-t0s" firstAttribute="bottom" secondItem="Bf9-dN-Tjb" secondAttribute="bottom" id="GYm-1B-9B7"/>
+                            <constraint firstItem="Bf9-dN-Tjb" firstAttribute="leading" secondItem="CAt-cf-t0s" secondAttribute="leading" id="RFP-y0-eE9"/>
+                            <constraint firstItem="Bf9-dN-Tjb" firstAttribute="top" secondItem="CAt-cf-t0s" secondAttribute="top" id="SV3-Z6-VgF"/>
+                            <constraint firstItem="CAt-cf-t0s" firstAttribute="trailing" secondItem="Bf9-dN-Tjb" secondAttribute="trailing" id="Upe-H3-9x0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NuevoMovimiento" id="Tsg-qX-2Rz">
+                        <barButtonItem key="rightBarButtonItem" title="Listo" style="done" id="ZNq-A5-B9f">
+                            <connections>
+                                <action selector="listoButtonAction:" destination="zoz-dM-bvO" id="LVa-sw-asC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="descripcionTextField" destination="atj-F9-9do" id="Xdp-1b-2IJ"/>
+                        <outlet property="fechaTextField" destination="dlX-qF-UMs" id="FQg-hE-1ip"/>
+                        <outlet property="montoTextField" destination="nin-ss-4tX" id="3IE-ze-2bD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgV-1b-EU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1930" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

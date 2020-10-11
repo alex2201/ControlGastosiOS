@@ -7,8 +7,9 @@
 
 import UIKit
 
-class PrincipalVC: UIViewController {
+class PrincipalVC: UIViewController, Storyboarded {
     
+    var coordinator: MainCoordinator?
     
     @IBAction func añadirButtonAction(_ sender: Any) {
         let actions = [
@@ -16,7 +17,7 @@ class PrincipalVC: UIViewController {
                 title: "Categoría",
                 style: .default,
                 handler: { _ in 
-                    self.performSegue(withIdentifier: "goToCrearCategoria", sender: self)
+                    self.coordinator?.goToCrearCategoria()
                 }
             ),
             UIAlertAction(

@@ -22,7 +22,7 @@ class TextFieldValidator: NSObject, UITextFieldDelegate {
 	}
 	
 	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-		let errorDisplay = textField as? ErrorDisplay
+		let toolbarTextField = textField as? UIToolbarTextField
 		let currentText = textField.text ?? ""
 		let replacementText = (currentText as NSString).replacingCharacters(in: range, with: string)
 		
@@ -30,11 +30,7 @@ class TextFieldValidator: NSObject, UITextFieldDelegate {
 		
 		if validFormat {
 			let validContent = contentValidator?.validate(string: replacementText) ?? true
-			if validContent {
-				errorDisplay?.hideError()
-			} else {
-				errorDisplay?.displayError()
-			}
+            toolbarTextField?.isValid = validContent
 			
 			delegate?.textFieldValidator(self, didValidateContent: replacementText, isValid: validContent, forTextField: textField)
 		}

@@ -17,7 +17,15 @@ class UIToolbarTextField: DesignableUITextField, ErrorDisplay {
     
     typealias Action = () -> Void
     
-    var isValid = false
+    var isValid: Bool = false {
+        didSet {
+            if isValid {
+                hideError()
+            } else {
+                displayError()
+            }
+        }
+    }
 	private var doneAction: Action!
 	private var cancelAction: Action!
 	var validator: TextFieldValidator? {
@@ -67,13 +75,11 @@ class UIToolbarTextField: DesignableUITextField, ErrorDisplay {
 		layer.borderColor = UIColor.red.cgColor
 		layer.borderWidth = 3.0
 		layer.cornerRadius = 10.0
-        isValid = false
 	}
 	
 	func hideError() {
 		layer.borderColor = nil
 		layer.borderWidth = 0.0
-        isValid = true
 	}
 	
 }
