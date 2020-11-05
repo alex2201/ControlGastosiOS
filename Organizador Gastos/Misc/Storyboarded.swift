@@ -8,11 +8,11 @@
 import UIKit
 
 protocol Storyboarded: UIViewController {
-    static func instantiate(forStoryboard storyboardName: String) -> Self
+    static func instantiate(fromStoryboard storyboardName: String) -> Self
 }
 
 extension Storyboarded {
-    static func instantiate(forStoryboard storyboardName: String) -> Self {
+    static func instantiate(fromStoryboard storyboardName: String) -> Self {
         // this pulls out "MyApp.MyViewController"
         let fullName = NSStringFromClass(self)
         

@@ -12,14 +12,14 @@ class AlertBuilder {
 	typealias Completion = () -> Void
 	typealias ValueCompletion = (String) -> Void
 	
-	static func getMessageAlert(title: String, message: String, completion: Completion?) -> UIAlertController {
+	static func getMessageAlert(title: String, message: String, completion: Completion? = nil) -> UIAlertController {
 		let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		let action = UIAlertAction(title: "Listo", style: .default)
 		alert.addAction(action)
 		return alert
 	}
 	
-	static func getConfirmationAlert(title: String, message: String, successFunc: Completion?, cancelFunc: Completion?) -> UIAlertController {
+	static func getConfirmationAlert(title: String, message: String, successFunc: Completion? = nil, cancelFunc: Completion? = nil) -> UIAlertController {
 		let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel) { _ in
 			cancelFunc?()
@@ -32,7 +32,7 @@ class AlertBuilder {
 		return alert
 	}
 	
-	static func getDestructiveConfirmationAlert(title: String, message: String, successFunc: Completion?, cancelFunc: Completion?) -> UIAlertController {
+	static func getDestructiveConfirmationAlert(title: String, message: String, successFunc: Completion? = nil, cancelFunc: Completion? = nil) -> UIAlertController {
 		let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		let cancelAction = UIAlertAction(title: "Cancelar", style: .destructive) { _ in
 			cancelFunc?()
@@ -54,7 +54,7 @@ class AlertBuilder {
 		return alert
 	}
 	
-	static func getTextFieldAlert(title: String, message: String, placeholder: String, autoCapitalization: UITextAutocapitalizationType = .words, autoCorrection: UITextAutocorrectionType = .yes, successFunc: ValueCompletion?, cancelFunc: Completion?) -> UIAlertController {
+	static func getTextFieldAlert(title: String, message: String, placeholder: String, autoCapitalization: UITextAutocapitalizationType = .words, autoCorrection: UITextAutocorrectionType = .yes, successFunc: ValueCompletion?, cancelFunc: Completion? = nil) -> UIAlertController {
 		var alertTextField: UITextField?
 		let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel) { _ in

@@ -7,14 +7,18 @@
 
 import UIKit
 
-class NuevoMovimientoVC: UIViewController, Storyboarded {
+class NuevoMovimientoVC: BaseViewController, Storyboarded {
     
-    @IBOutlet weak var descripcionTextField: AdvancedTextField!
-    @IBOutlet weak var fechaTextField: AdvancedTextField!
-    @IBOutlet weak var montoTextField: AdvancedTextField!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var descripcionTextField: UIToolbarTextField!
+    @IBOutlet weak var montoTextField: UIToolbarTextField!
+    
+    weak var coordinator: MovimientosCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+        keyboardScrollView = scrollView
     }
     
     @IBAction func listoButtonAction(_ sender: Any) {
@@ -22,11 +26,18 @@ class NuevoMovimientoVC: UIViewController, Storyboarded {
     }
     
     private func setup() {
-        descripcionTextField.configure(
-            validator: TextFieldValidator(
-                formatValidator: SentenceSequenceStringValidator(),
-                contentValidator: NotEmptyStringValidator())
+        descripcionTextField.validator = TextFieldValidator(
+            formatValidator: DefaultStringValidator(),
+            contentValidator: NotEmptyStringValidator()
+        )
+        
+        montoTextField.validator = TextFieldValidator(
+            formatValidator: DecimalStringValidator(),
+            contentValidator: LogicalStringValidator(
+                firstValidator: NotEmptyStringValidator(),
+                secondValidator: DecimalStringValidator(),
+                operation: .and
+            )
         )
     }
-    
 }
