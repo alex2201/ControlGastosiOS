@@ -15,7 +15,7 @@ class DesignableUITextField: UITextField {
         didSet {
             if let leftImage = leftImage {
                 let imageView = getViewFor(image: leftImage)
-                leftViewMode = .always
+                leftViewMode = .unlessEditing
                 leftView = imageView
             } else {
                 leftViewMode = .never

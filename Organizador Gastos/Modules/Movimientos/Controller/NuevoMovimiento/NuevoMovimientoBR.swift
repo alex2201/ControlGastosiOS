@@ -11,7 +11,7 @@ class NuevoMovimientoBR {
     
     var descripcion: String?
     var fecha: Date?
-    var monto: Date?
+    var monto: Double?
     
     // MARK: - Defaults
     var fechaPorDefecto: Date { Date() }
@@ -19,6 +19,7 @@ class NuevoMovimientoBR {
     // MARK: - Títulos
     
     // MARK: - Mensajes Error
+    var noPuedeGuardarMovimiento: String { "Debe llenar todos los campos requeridos." }
     
     // MARK: - Validaciones
     var puedeGuardarMovimiento: Bool {

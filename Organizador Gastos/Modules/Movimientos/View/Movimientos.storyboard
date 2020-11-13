@@ -47,6 +47,9 @@
                                                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="textFieldValueChanged:" destination="zoz-dM-bvO" eventType="editingDidEnd" id="yT4-UW-HGI"/>
+                                                                        </connections>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
@@ -69,6 +72,9 @@
                                                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="textFieldValueChanged:" destination="zoz-dM-bvO" eventType="editingDidEnd" id="PPR-dK-3qR"/>
+                                                                        </connections>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
@@ -138,6 +144,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="datePicker" destination="oYZ-sB-owI" id="PX3-eL-Usi"/>
                         <outlet property="descripcionTextField" destination="F7W-C7-N5K" id="9bW-lq-euE"/>
                         <outlet property="montoTextField" destination="jrd-To-Gx4" id="4RZ-g5-ReC"/>
                         <outlet property="scrollView" destination="6hq-HN-cVp" id="lpQ-bo-OKU"/>
