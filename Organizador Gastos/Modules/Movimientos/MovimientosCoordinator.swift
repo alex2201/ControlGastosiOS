@@ -21,7 +21,8 @@ class MovimientosCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        let vc = ResumenMovimientosVC()
+        let view = ResumenMovimientosView()
+        let vc = ResumenMovimientosVC(view: view)
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: false)
     }

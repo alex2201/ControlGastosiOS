@@ -25,8 +25,13 @@ class ResumenMovimientosView: UIView {
     private func configurarUI() {
         backgroundColor = .white
         
-        montoTotalLbl.center = center
-        montoTotalLbl.sizeToFit()
+        addSubview(montoTotalLbl)
+        montoTotalLbl.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            montoTotalLbl.centerYAnchor.constraint(equalTo: centerYAnchor),
+            montoTotalLbl.centerXAnchor.constraint(equalTo: centerXAnchor),
+        ])
     }
     
     func configurar(montoTotal: Double) {
