@@ -32,4 +32,8 @@ class MovimientosCoordinator: NSObject, Coordinator {
         navigationController?.pushViewController(vc, animated: false)
     }
     
+    func volverAlInicio(animated: Bool = false) {
+        navigationController?.popToRootViewController(animated: animated)
+    }
+    
 }
