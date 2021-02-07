@@ -7,7 +7,8 @@
 
 import UIKit
 
-class MovimientosNC: UINavigationController, Storyboarded {
+class MovimientosNC: UINavigationController {
+    
     weak var coordinator: MovimientosCoordinator?
     
     override func viewDidDisappear(_ animated: Bool) {

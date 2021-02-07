@@ -1,4 +1,5 @@
 import UIKit
+import Combine
 
 protocol ErrorDisplay {
     func displayError()
@@ -21,6 +22,9 @@ class UIToolbarTextField: DesignableUITextField, ErrorDisplay {
         didSet {
             updateErrorLayer()
         }
+    }
+    var validatedText: String? {
+        return isValid ? text : nil
     }
     
     private let errorLayer: CAShapeLayer
@@ -92,6 +96,12 @@ class UIToolbarTextField: DesignableUITextField, ErrorDisplay {
         isValid = true
     }
     
+    func makeTextChangedSubscriber<R, T>(to path: ReferenceWritableKeyPath<R, T>, from root: R, mapFunc: @escaping (String?) -> T) -> AnyCancellable {
+        return NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification, object: self)
+            .map({ ($0.object as! Self).validatedText})
+            .map(mapFunc)
+            .assign(to: path, on: root)
+    }
 }
 
 private extension UIToolbarTextField {

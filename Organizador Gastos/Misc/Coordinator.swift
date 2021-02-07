@@ -18,7 +18,6 @@ protocol Coordinator: NSObject {
     func finish(completion: (() -> Void)?)
     func add(_ child: Coordinator)
     func remove(_ child: Coordinator)
-    func presentErrorAlert(message: String)
 }
 
 extension Coordinator {
@@ -44,11 +43,6 @@ extension Coordinator {
         childCoordinators.removeAll(where: { $0 == child })
         print("------Coordinator remove after")
         print(childCoordinators.count)
-    }
-    
-    func presentErrorAlert(message: String) {
-        let alert = AlertBuilder.getMessageAlert(title: "Aviso", message: message)
-        controller.present(alert, animated: true, completion: nil)
     }
     
     func finish(completion: (() -> Void)? = nil) {
