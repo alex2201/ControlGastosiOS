@@ -13,10 +13,10 @@
 		BD0F44BE25CFB22A00B02214 /* ResumenMovimientosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44BD25CFB22A00B02214 /* ResumenMovimientosVC.swift */; };
 		BD0F44C325CFB34800B02214 /* RegistroMovimientoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44C225CFB34800B02214 /* RegistroMovimientoVC.swift */; };
 		BD0F44CE25CFB3B500B02214 /* MovimientosNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44CD25CFB3B500B02214 /* MovimientosNC.swift */; };
+		BD0F44E625CFB64500B02214 /* ResumenMovimientosViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44E525CFB64500B02214 /* ResumenMovimientosViewTests.swift */; };
+		BD0F44EE25CFB68200B02214 /* ResumenMovimientosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44ED25CFB68200B02214 /* ResumenMovimientosView.swift */; };
 		BD39509F251723EB00B45D03 /* SentenceSequenceStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39509E251723EB00B45D03 /* SentenceSequenceStringValidator.swift */; };
 		BD5B95292545367800B05CE0 /* MovimientosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B95282545367800B05CE0 /* MovimientosCoordinator.swift */; };
-		BD5B954525453C6200B05CE0 /* MovimientosPR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B954425453C6200B05CE0 /* MovimientosPR.swift */; };
-		BD5B954D25453C7A00B05CE0 /* MovimientosPRDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B954C25453C7A00B05CE0 /* MovimientosPRDelegate.swift */; };
 		BD884FC92532C36200FA0E18 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD884FC82532C36200FA0E18 /* Coordinator.swift */; };
 		BD884FCE2532C41700FA0E18 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD884FCD2532C41700FA0E18 /* Storyboarded.swift */; };
 		BDF609F02516FFEF005E2297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF609EF2516FFEF005E2297 /* AppDelegate.swift */; };
@@ -110,10 +110,10 @@
 		BD0F44BD25CFB22A00B02214 /* ResumenMovimientosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosVC.swift; sourceTree = "<group>"; };
 		BD0F44C225CFB34800B02214 /* RegistroMovimientoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMovimientoVC.swift; sourceTree = "<group>"; };
 		BD0F44CD25CFB3B500B02214 /* MovimientosNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovimientosNC.swift; sourceTree = "<group>"; };
+		BD0F44E525CFB64500B02214 /* ResumenMovimientosViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosViewTests.swift; sourceTree = "<group>"; };
+		BD0F44ED25CFB68200B02214 /* ResumenMovimientosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosView.swift; sourceTree = "<group>"; };
 		BD39509E251723EB00B45D03 /* SentenceSequenceStringValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceSequenceStringValidator.swift; sourceTree = "<group>"; };
 		BD5B95282545367800B05CE0 /* MovimientosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientosCoordinator.swift; sourceTree = "<group>"; };
-		BD5B954425453C6200B05CE0 /* MovimientosPR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientosPR.swift; sourceTree = "<group>"; };
-		BD5B954C25453C7A00B05CE0 /* MovimientosPRDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientosPRDelegate.swift; sourceTree = "<group>"; };
 		BD884FC82532C36200FA0E18 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BD884FCD2532C41700FA0E18 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		BDF609EC2516FFEF005E2297 /* Organizador Gastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Organizador Gastos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,18 +225,34 @@
 		BD0F44D225CFB53600B02214 /* Movimientos */ = {
 			isa = PBXGroup;
 			children = (
-				BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */,
+				BD0F44D625CFB5DA00B02214 /* Controller */,
+				BD0F44E125CFB60200B02214 /* View */,
 			);
 			path = Movimientos;
 			sourceTree = "<group>";
 		};
-		BD5B954325453C5500B05CE0 /* Presenter */ = {
+		BD0F44D625CFB5DA00B02214 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BD5B954425453C6200B05CE0 /* MovimientosPR.swift */,
-				BD5B954C25453C7A00B05CE0 /* MovimientosPRDelegate.swift */,
+				BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */,
 			);
-			path = Presenter;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD0F44DD25CFB5E800B02214 /* RegistroMovimiento */ = {
+			isa = PBXGroup;
+			children = (
+				BD0F44C225CFB34800B02214 /* RegistroMovimientoVC.swift */,
+			);
+			path = RegistroMovimiento;
+			sourceTree = "<group>";
+		};
+		BD0F44E125CFB60200B02214 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD0F44E525CFB64500B02214 /* ResumenMovimientosViewTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BD884FC72532C35100FA0E18 /* Misc */ = {
@@ -253,7 +269,6 @@
 			children = (
 				BD5B95282545367800B05CE0 /* MovimientosCoordinator.swift */,
 				BD884FDB2532CABF00FA0E18 /* Controller */,
-				BD5B954325453C5500B05CE0 /* Presenter */,
 				BD884FDC2532CAC500FA0E18 /* View */,
 			);
 			path = Movimientos;
@@ -262,10 +277,10 @@
 		BD884FDB2532CABF00FA0E18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BD0F44CD25CFB3B500B02214 /* MovimientosNC.swift */,
-				BD0F44C225CFB34800B02214 /* RegistroMovimientoVC.swift */,
-				BD0F44BC25CFB21800B02214 /* ResumenMovimientos */,
 				BD0F449E25CF981100B02214 /* MovimientoBR.swift */,
+				BD0F44CD25CFB3B500B02214 /* MovimientosNC.swift */,
+				BD0F44DD25CFB5E800B02214 /* RegistroMovimiento */,
+				BD0F44BC25CFB21800B02214 /* ResumenMovimientos */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +288,7 @@
 		BD884FDC2532CAC500FA0E18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BD0F44ED25CFB68200B02214 /* ResumenMovimientosView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -722,6 +738,7 @@
 				BDF60AB325170415005E2297 /* UITextFieldExtension.swift in Sources */,
 				BDF60AA125170415005E2297 /* EmptyStringValidator.swift in Sources */,
 				BDF60AAE25170415005E2297 /* BaseViewController.swift in Sources */,
+				BD0F44EE25CFB68200B02214 /* ResumenMovimientosView.swift in Sources */,
 				BDF60AA825170415005E2297 /* ImageFetcher.swift in Sources */,
 				BDF60A9525170415005E2297 /* Session.swift in Sources */,
 				BDF60AB925170415005E2297 /* TextFieldValidator.swift in Sources */,
@@ -730,9 +747,7 @@
 				BDF60AB425170415005E2297 /* UIStackViewExtension.swift in Sources */,
 				BD884FC92532C36200FA0E18 /* Coordinator.swift in Sources */,
 				BDF60AA925170415005E2297 /* Cache.swift in Sources */,
-				BD5B954525453C6200B05CE0 /* MovimientosPR.swift in Sources */,
 				BDF60A9C25170415005E2297 /* LogicalStringValidator.swift in Sources */,
-				BD5B954D25453C7A00B05CE0 /* MovimientosPRDelegate.swift in Sources */,
 				BDF60AA225170415005E2297 /* Globals.swift in Sources */,
 				BDF60AB125170415005E2297 /* AlertBuilder.swift in Sources */,
 				BDF60AB625170415005E2297 /* UITapGestureRecognizer.swift in Sources */,
@@ -783,6 +798,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0F44E625CFB64500B02214 /* ResumenMovimientosViewTests.swift in Sources */,
 				BD0F44A725CF9FCF00B02214 /* MovimientoBRTests.swift in Sources */,
 				BD0F44B825CFA67200B02214 /* MovimientosCoordinatorTests.swift in Sources */,
 			);
