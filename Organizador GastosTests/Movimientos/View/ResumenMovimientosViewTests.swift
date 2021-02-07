@@ -19,5 +19,11 @@ class ResumenMovimientosViewTests: XCTestCase {
     override func tearDownWithError() throws {
         sut = nil
     }
+    
+    func test_ResumenMovimientosView_ConfiguracionInicial_MuestraInformacionDeConfiguracion() {
+        sut.configurar(montoTotal: 200.0)
+        
+        XCTAssertEqual(sut.montoTotalLbl.text, "$200.00")
+    }
 
 }
