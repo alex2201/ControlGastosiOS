@@ -27,8 +27,9 @@ struct ResumenMovimientosModel {
     }
     
     private func generarSeccionesPorFecha(usando movimientos: [Movimiento]) -> [SeccionFecha] {
-        return movimientos
-            .map({$0.fecha})
+        return Set(movimientos
+            .map({$0.fecha}))
+            .sorted(by: { $0 > $1 })
             .map({ dateFormatter.string(from: $0) })
     }
     
