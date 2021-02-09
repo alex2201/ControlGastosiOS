@@ -8,13 +8,21 @@
 import UIKit
 
 class ResumenMovimientosVC: UIViewController {
+    
+    typealias DataSource = UITableViewDiffableDataSource<ResumenMovimientosModel.SeccionFecha, Movimiento>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<ResumenMovimientosModel.SeccionFecha, Movimiento>
+    
     weak var coordinator: MovimientosCoordinator?
     
     let resumenView: ResumenMovimientosView
+    private var model = ResumenMovimientosModel()
+    
+    private lazy var dataSource: DataSource = crearDataSource()
     
     init(view: ResumenMovimientosView) {
         self.resumenView = view
         super.init(nibName: nil, bundle: nil)
+        title = "Resumen"
     }
     
     required init?(coder: NSCoder) {
@@ -35,6 +43,23 @@ class ResumenMovimientosVC: UIViewController {
             resumenView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
         ])
         
-        resumenView.configurar(montoTotal: 400)
+        resumenView.configurar(montoTotal: 1_209_486.23)
+    }
+    
+    private func crearDataSource() -> DataSource {
+        let dataSource = DataSource(tableView: resumenView.tablaMovimientos) { (tableView, indexPath, movimiento) -> UITableViewCell? in
+            let cell = UITableViewCell()
+            
+            return cell
+        }
+        return dataSource
+    }
+    
+    private func aplicarSnapshot() {
+        var snapshot = Snapshot()
+        for seccion in model.secciones {
+            snapshot.appendItems(model.movimientosPorSeccion[seccion]!, toSection: seccion)
+        }
+        dataSource.apply(snapshot)
     }
 }

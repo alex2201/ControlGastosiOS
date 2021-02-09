@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		569CD6B525D3208900C98E03 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CD6B425D3208900C98E03 /* DateExtension.swift */; };
+		569CD6BA25D33B0A00C98E03 /* ResumenMovimientosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CD6B925D33B0A00C98E03 /* ResumenMovimientosModel.swift */; };
 		BD0F449F25CF981100B02214 /* MovimientoBR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F449E25CF981100B02214 /* MovimientoBR.swift */; };
 		BD0F44A725CF9FCF00B02214 /* MovimientoBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44A625CF9FCF00B02214 /* MovimientoBRTests.swift */; };
 		BD0F44B825CFA67200B02214 /* MovimientosCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */; };
@@ -107,6 +108,7 @@
 
 /* Begin PBXFileReference section */
 		569CD6B425D3208900C98E03 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		569CD6B925D33B0A00C98E03 /* ResumenMovimientosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosModel.swift; sourceTree = "<group>"; };
 		BD0F449E25CF981100B02214 /* MovimientoBR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientoBR.swift; sourceTree = "<group>"; };
 		BD0F44A625CF9FCF00B02214 /* MovimientoBRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientoBRTests.swift; sourceTree = "<group>"; };
 		BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientosCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				BD0F44F625CFB71C00B02214 /* Movimiento.swift */,
+				569CD6B925D33B0A00C98E03 /* ResumenMovimientosModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -777,6 +780,7 @@
 				BDF60A9425170415005E2297 /* Utilities.swift in Sources */,
 				BDF60AC825170415005E2297 /* ApiQueryManager.swift in Sources */,
 				BDF60A9A25170415005E2297 /* DecimalStringValidator.swift in Sources */,
+				569CD6BA25D33B0A00C98E03 /* ResumenMovimientosModel.swift in Sources */,
 				BDF60AC425170415005E2297 /* NibLoadable.swift in Sources */,
 				BDF60A9D25170415005E2297 /* NotEmptyStringValidator.swift in Sources */,
 				BDF60A9B25170415005E2297 /* TelephoneStringValidator.swift in Sources */,
