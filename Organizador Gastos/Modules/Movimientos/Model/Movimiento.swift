@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movimiento {
+struct Movimiento: Hashable {
     let descripcion: String
     let monto: Double
     let fecha: Date
