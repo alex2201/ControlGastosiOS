@@ -13,26 +13,27 @@ struct Movimiento: Hashable {
     let fecha: Date
     
     static func dummySet() -> [Movimiento] {
+        let dateFormat = "dd/MM/yyyy"
         return [
             Movimiento(
                 descripcion: "Descripción del movimiento 1",
                 monto: 523.25,
-                fecha: Date.fromString("23/01/2021", usingFormat: "dd/mm/yyyy")!
+                fecha: Date.fromString("23/01/2021", usingFormat: dateFormat)!
             ),
             Movimiento(
                 descripcion: "Descripción del movimiento 2",
                 monto: 523.25,
-                fecha: Date.fromString("19/01/2021", usingFormat: "dd/mm/yyyy")!
+                fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
             ),
             Movimiento(
                 descripcion: "Descripción del movimiento 1",
                 monto: 523.25,
-                fecha: Date.fromString("19/01/2021", usingFormat: "dd/mm/yyyy")!
+                fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
             ),
             Movimiento(
                 descripcion: "Descripción del movimiento 1",
                 monto: 523.25,
-                fecha: Date.fromString("12/02/2021", usingFormat: "dd/mm/yyyy")!
+                fecha: Date.fromString("12/02/2021", usingFormat: dateFormat)!
             ),
         ]
     }
