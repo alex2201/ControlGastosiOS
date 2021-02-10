@@ -30,7 +30,7 @@ class ResumenMovimientosModelTests: XCTestCase {
     }
     
     func test_ConfiguracionModelo_CreaSeccionesOrdenadasPorMasReciente() {
-        sut.configurar(con: movimientosMock)
+        sut = sut.configurar(con: movimientosMock)
         
         XCTAssertEqual(
             sut.secciones,
@@ -45,7 +45,7 @@ class ResumenMovimientosModelTests: XCTestCase {
     func test_ConfiguracionModelo_CreaMovimientosPorSecciones() {
         let dateFormat = "dd/MM/yyyy"
         
-        sut.configurar(con: movimientosMock)
+        sut = sut.configurar(con: movimientosMock)
         
         XCTAssertEqual(
             sut.movimientosPorSeccion,

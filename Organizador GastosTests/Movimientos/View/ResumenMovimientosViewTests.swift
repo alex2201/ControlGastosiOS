@@ -11,6 +11,7 @@ import XCTest
 class ResumenMovimientosViewTests: XCTestCase {
     
     var sut: ResumenMovimientosView!
+    let moneyFormatter = StringFormatter.moneyFormatter
 
     override func setUpWithError() throws {
         sut = ResumenMovimientosView()
@@ -23,7 +24,7 @@ class ResumenMovimientosViewTests: XCTestCase {
     func test_ResumenMovimientosView_ConfiguracionInicial_MuestraInformacionDeConfiguracion() {
         sut.configurar(montoTotal: 200.0)
         
-        XCTAssertEqual(sut.montoTotalLbl.text, "$200.00")
+        XCTAssertEqual(sut.montoTotalLbl.text, moneyFormatter.string(from: NSNumber(200.0)))
     }
 
 }
