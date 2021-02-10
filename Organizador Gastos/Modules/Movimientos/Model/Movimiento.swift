@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 struct Movimiento: Hashable {
     let descripcion: String
@@ -36,5 +37,33 @@ struct Movimiento: Hashable {
                 fecha: Date.fromString("12/02/2021", usingFormat: dateFormat)!
             ),
         ]
+    }
+    
+    static func cargarDesdeDB(usando context: NSManagedObjectContext, completion: @escaping ([Movimiento]) -> Void) {
+        context.perform {
+            let movimientos: [Movimiento]
+            let request: NSFetchRequest<MovimientoDB> = MovimientoDB.fetchRequest()
+            
+            do {
+                let movimientosDB = try context.fetch(request)
+                movimientos = movimientosDB
+                    .map({ Movimiento(movimiento: $0) })
+            } catch {
+                print(error.localizedDescription)
+                movimientos = []
+            }
+            
+            completion(movimientos)
+        }
+    }
+}
+
+extension Movimiento {
+    init(movimiento: MovimientoDB) {
+        self.init(
+            descripcion: movimiento.descripcion!,
+            monto: movimiento.monto,
+            fecha: movimiento.fecha!
+        )
     }
 }
