@@ -12,15 +12,15 @@ class ResumenMovimientosModelTests: XCTestCase {
     
     var sut: ResumenMovimientosModel!
     let movimientosMock = Movimiento.dummySet()
-
+    
     override func setUpWithError() throws {
-       sut = ResumenMovimientosModel()
+        sut = ResumenMovimientosModel()
     }
-
+    
     override func tearDownWithError() throws {
         sut = nil
     }
-
+    
     func test_CreacionModelo_NoTieneSecciones() {
         XCTAssertEqual(sut.secciones, [])
     }
@@ -79,5 +79,5 @@ class ResumenMovimientosModelTests: XCTestCase {
             ]
         )
     }
-
+    
 }

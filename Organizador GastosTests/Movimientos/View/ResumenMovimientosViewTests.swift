@@ -12,11 +12,11 @@ class ResumenMovimientosViewTests: XCTestCase {
     
     var sut: ResumenMovimientosView!
     let moneyFormatter = StringFormatter.moneyFormatter
-
+    
     override func setUpWithError() throws {
         sut = ResumenMovimientosView()
     }
-
+    
     override func tearDownWithError() throws {
         sut = nil
     }
@@ -26,5 +26,5 @@ class ResumenMovimientosViewTests: XCTestCase {
         
         XCTAssertEqual(sut.montoTotalLbl.text, moneyFormatter.string(from: NSNumber(200.0)))
     }
-
+    
 }
