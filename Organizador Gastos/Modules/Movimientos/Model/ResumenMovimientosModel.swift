@@ -21,11 +21,17 @@ struct ResumenMovimientosModel {
         return dateFormatter
     }()
     
-    mutating func configurar(con movimientos: [Movimiento]) {
+    // MARK: Métodos públicos
+    init(movimientos: [Movimiento] = []) {
         secciones = generarSeccionesPorFecha(usando: movimientos)
         movimientosPorSeccion = generarMovimientosPorSeccions(usandoSecciones: secciones, para: movimientos)
     }
     
+    func configurar(con movimientos: [Movimiento]) -> ResumenMovimientosModel {
+        return ResumenMovimientosModel(movimientos: movimientos)
+    }
+    
+    // MARK: Métodos privados
     private func generarSeccionesPorFecha(usando movimientos: [Movimiento]) -> [SeccionFecha] {
         return Set(movimientos
             .map({$0.fecha}))
