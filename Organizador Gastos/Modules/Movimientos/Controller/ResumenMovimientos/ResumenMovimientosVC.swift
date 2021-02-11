@@ -29,6 +29,11 @@ class ResumenMovimientosVC: UIViewController {
         self.contenedorDB = contenedor
         super.init(nibName: nil, bundle: nil)
         title = "Resumen"
+        
+        resumenView.añadirButton.primaryAction = UIAction(handler: { (_) in
+            self.coordinator?.registrarMovimiento()
+        })
+
     }
     
     required init?(coder: NSCoder) {
