@@ -244,6 +244,7 @@
 		BD0F44D225CFB53600B02214 /* Movimientos */ = {
 			isa = PBXGroup;
 			children = (
+				BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */,
 				569CD6BE25D340FA00C98E03 /* Model */,
 				BD0F44D625CFB5DA00B02214 /* Controller */,
 				BD0F44E125CFB60200B02214 /* View */,
@@ -254,7 +255,6 @@
 		BD0F44D625CFB5DA00B02214 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
