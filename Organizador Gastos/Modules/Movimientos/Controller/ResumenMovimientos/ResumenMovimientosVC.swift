@@ -39,6 +39,7 @@ class ResumenMovimientosVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .white
         view.addSubview(resumenView)
         configurarResumenView()
     }
