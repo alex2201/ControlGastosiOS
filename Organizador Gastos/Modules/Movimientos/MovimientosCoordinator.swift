@@ -31,7 +31,7 @@ class MovimientosCoordinator: NSObject, Coordinator {
     func registrarMovimiento() {
         let vc = RegistroMovimientoVC()
         vc.coordinator = self
-        navigationController?.pushViewController(vc, animated: false)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func volverAlInicio(animated: Bool = false) {
