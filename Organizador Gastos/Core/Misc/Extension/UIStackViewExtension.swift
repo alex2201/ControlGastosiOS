@@ -1,14 +1,17 @@
 //
 //  UIStackViewExtension.swift
-//  appautofin
+//  appSeat
 //
-//  Created by Alexander Lopez Cedillo on 01/07/20.
-//  Copyright © 2020 Alexander López Cedillo. All rights reserved.
+//  Created by Alexander Lopez Cedillo on 07/12/20.
 //
 
 import UIKit
 
 extension UIStackView {
+    func clear() {
+        arrangedSubviews.forEach({ $0.removeFromSuperview() })
+    }
+    
     func addBackground(color: UIColor) {
         let subView = UIView(frame: bounds)
         subView.backgroundColor = color

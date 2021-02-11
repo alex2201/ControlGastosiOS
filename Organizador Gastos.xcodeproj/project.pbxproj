@@ -11,6 +11,15 @@
 		569CD6BA25D33B0A00C98E03 /* ResumenMovimientosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CD6B925D33B0A00C98E03 /* ResumenMovimientosModel.swift */; };
 		569CD6C025D3410B00C98E03 /* ResumenMovimientosModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CD6BF25D3410B00C98E03 /* ResumenMovimientosModelTests.swift */; };
 		56EFC31825D59AC400511CDF /* MovimientoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC31725D59AC400511CDF /* MovimientoTests.swift */; };
+		56EFC32B25D5BF3100511CDF /* NSMuttableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC32525D5BF3100511CDF /* NSMuttableAttributedString.swift */; };
+		56EFC32C25D5BF3100511CDF /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC32625D5BF3100511CDF /* UIControlExtension.swift */; };
+		56EFC32D25D5BF3100511CDF /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC32725D5BF3100511CDF /* UIStackViewExtension.swift */; };
+		56EFC32E25D5BF3100511CDF /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC32825D5BF3100511CDF /* CLLocationExtension.swift */; };
+		56EFC32F25D5BF3100511CDF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC32925D5BF3100511CDF /* UIViewControllerExtension.swift */; };
+		56EFC33025D5BF3100511CDF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC32A25D5BF3100511CDF /* StringExtension.swift */; };
+		56EFC33D25D5BFB700511CDF /* UIControlSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC33A25D5BFB700511CDF /* UIControlSubscription.swift */; };
+		56EFC33E25D5BFB700511CDF /* CombineCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC33B25D5BFB700511CDF /* CombineCompatible.swift */; };
+		56EFC33F25D5BFB700511CDF /* UIControlPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFC33C25D5BFB700511CDF /* UIControlPublisher.swift */; };
 		BD0F449F25CF981100B02214 /* MovimientoBR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F449E25CF981100B02214 /* MovimientoBR.swift */; };
 		BD0F44A725CF9FCF00B02214 /* MovimientoBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44A625CF9FCF00B02214 /* MovimientoBRTests.swift */; };
 		BD0F44B825CFA67200B02214 /* MovimientosCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */; };
@@ -64,8 +73,6 @@
 		BDF60AB125170415005E2297 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7025170415005E2297 /* AlertBuilder.swift */; };
 		BDF60AB225170415005E2297 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7225170415005E2297 /* UIScrollView.swift */; };
 		BDF60AB325170415005E2297 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7325170415005E2297 /* UITextFieldExtension.swift */; };
-		BDF60AB425170415005E2297 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7425170415005E2297 /* UIStackViewExtension.swift */; };
-		BDF60AB525170415005E2297 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7525170415005E2297 /* StringExtension.swift */; };
 		BDF60AB625170415005E2297 /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7625170415005E2297 /* UITapGestureRecognizer.swift */; };
 		BDF60AB725170415005E2297 /* RoundedCornersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7725170415005E2297 /* RoundedCornersViewController.swift */; };
 		BDF60AB825170415005E2297 /* AttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF60A7925170415005E2297 /* AttributedLabel.swift */; };
@@ -113,6 +120,15 @@
 		569CD6B925D33B0A00C98E03 /* ResumenMovimientosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosModel.swift; sourceTree = "<group>"; };
 		569CD6BF25D3410B00C98E03 /* ResumenMovimientosModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosModelTests.swift; sourceTree = "<group>"; };
 		56EFC31725D59AC400511CDF /* MovimientoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientoTests.swift; sourceTree = "<group>"; };
+		56EFC32525D5BF3100511CDF /* NSMuttableAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMuttableAttributedString.swift; sourceTree = "<group>"; };
+		56EFC32625D5BF3100511CDF /* UIControlExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
+		56EFC32725D5BF3100511CDF /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		56EFC32825D5BF3100511CDF /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
+		56EFC32925D5BF3100511CDF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		56EFC32A25D5BF3100511CDF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		56EFC33A25D5BFB700511CDF /* UIControlSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlSubscription.swift; sourceTree = "<group>"; };
+		56EFC33B25D5BFB700511CDF /* CombineCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineCompatible.swift; sourceTree = "<group>"; };
+		56EFC33C25D5BFB700511CDF /* UIControlPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlPublisher.swift; sourceTree = "<group>"; };
 		BD0F449E25CF981100B02214 /* MovimientoBR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientoBR.swift; sourceTree = "<group>"; };
 		BD0F44A625CF9FCF00B02214 /* MovimientoBRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientoBRTests.swift; sourceTree = "<group>"; };
 		BD0F44B725CFA67200B02214 /* MovimientosCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientosCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -172,8 +188,6 @@
 		BDF60A7025170415005E2297 /* AlertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
 		BDF60A7225170415005E2297 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		BDF60A7325170415005E2297 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
-		BDF60A7425170415005E2297 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
-		BDF60A7525170415005E2297 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BDF60A7625170415005E2297 /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
 		BDF60A7725170415005E2297 /* RoundedCornersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersViewController.swift; sourceTree = "<group>"; };
 		BDF60A7925170415005E2297 /* AttributedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedLabel.swift; sourceTree = "<group>"; };
@@ -429,6 +443,9 @@
 		BDF60A4925170415005E2297 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				56EFC33B25D5BFB700511CDF /* CombineCompatible.swift */,
+				56EFC33C25D5BFB700511CDF /* UIControlPublisher.swift */,
+				56EFC33A25D5BFB700511CDF /* UIControlSubscription.swift */,
 				BDF60A4A25170415005E2297 /* Constants.swift */,
 				BDF60A5C25170415005E2297 /* FirebaseLoginType.swift */,
 				BDF60A5B25170415005E2297 /* Globals.swift */,
@@ -445,6 +462,12 @@
 		BDF60A4D25170415005E2297 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				56EFC32825D5BF3100511CDF /* CLLocationExtension.swift */,
+				56EFC32525D5BF3100511CDF /* NSMuttableAttributedString.swift */,
+				56EFC32A25D5BF3100511CDF /* StringExtension.swift */,
+				56EFC32625D5BF3100511CDF /* UIControlExtension.swift */,
+				56EFC32725D5BF3100511CDF /* UIStackViewExtension.swift */,
+				56EFC32925D5BF3100511CDF /* UIViewControllerExtension.swift */,
 				BDF60A4E25170415005E2297 /* UserDefaultsExtension.swift */,
 				569CD6B425D3208900C98E03 /* DateExtension.swift */,
 			);
@@ -541,8 +564,6 @@
 			children = (
 				BDF60A7225170415005E2297 /* UIScrollView.swift */,
 				BDF60A7325170415005E2297 /* UITextFieldExtension.swift */,
-				BDF60A7425170415005E2297 /* UIStackViewExtension.swift */,
-				BDF60A7525170415005E2297 /* StringExtension.swift */,
 				BDF60A7625170415005E2297 /* UITapGestureRecognizer.swift */,
 			);
 			path = Extension;
@@ -768,16 +789,21 @@
 				BD39509F251723EB00B45D03 /* SentenceSequenceStringValidator.swift in Sources */,
 				BDF60AB325170415005E2297 /* UITextFieldExtension.swift in Sources */,
 				BDF60AA125170415005E2297 /* EmptyStringValidator.swift in Sources */,
+				56EFC33D25D5BFB700511CDF /* UIControlSubscription.swift in Sources */,
+				56EFC33025D5BF3100511CDF /* StringExtension.swift in Sources */,
 				BDF60AAE25170415005E2297 /* BaseViewController.swift in Sources */,
+				56EFC32D25D5BF3100511CDF /* UIStackViewExtension.swift in Sources */,
 				BD0F44EE25CFB68200B02214 /* ResumenMovimientosView.swift in Sources */,
 				BDF60AA825170415005E2297 /* ImageFetcher.swift in Sources */,
 				BDF60A9525170415005E2297 /* Session.swift in Sources */,
 				BD0F44F725CFB71C00B02214 /* Movimiento.swift in Sources */,
 				BDF60AB925170415005E2297 /* TextFieldValidator.swift in Sources */,
+				56EFC33E25D5BFB700511CDF /* CombineCompatible.swift in Sources */,
 				BDF60AB225170415005E2297 /* UIScrollView.swift in Sources */,
 				BDF60AC325170415005E2297 /* CarrouselCell.swift in Sources */,
-				BDF60AB425170415005E2297 /* UIStackViewExtension.swift in Sources */,
+				56EFC32F25D5BF3100511CDF /* UIViewControllerExtension.swift in Sources */,
 				BD884FC92532C36200FA0E18 /* Coordinator.swift in Sources */,
+				56EFC32E25D5BF3100511CDF /* CLLocationExtension.swift in Sources */,
 				BDF60AA925170415005E2297 /* Cache.swift in Sources */,
 				BDF60A9C25170415005E2297 /* LogicalStringValidator.swift in Sources */,
 				BDF60AA225170415005E2297 /* Globals.swift in Sources */,
@@ -800,6 +826,7 @@
 				BDF60A9B25170415005E2297 /* TelephoneStringValidator.swift in Sources */,
 				BDF60AA725170415005E2297 /* HTTPDataUploader.swift in Sources */,
 				BDF60AC125170415005E2297 /* CustomSegmentedControl.swift in Sources */,
+				56EFC32B25D5BF3100511CDF /* NSMuttableAttributedString.swift in Sources */,
 				BDF60A9725170415005E2297 /* StringValidator.swift in Sources */,
 				BDF60A9925170415005E2297 /* EmailStringValidator.swift in Sources */,
 				BDF60AA325170415005E2297 /* FirebaseLoginType.swift in Sources */,
@@ -809,13 +836,14 @@
 				BD0F44C325CFB34800B02214 /* RegistroMovimientoVC.swift in Sources */,
 				BDF60AC025170415005E2297 /* AttributedView.swift in Sources */,
 				BDF60AC525170415005E2297 /* GenericApi.swift in Sources */,
+				56EFC32C25D5BF3100511CDF /* UIControlExtension.swift in Sources */,
 				BDF60AAB25170415005E2297 /* CarrouselImageFetcher.swift in Sources */,
 				BD884FCE2532C41700FA0E18 /* Storyboarded.swift in Sources */,
+				56EFC33F25D5BFB700511CDF /* UIControlPublisher.swift in Sources */,
 				BDF60A9625170415005E2297 /* UserDefaultsExtension.swift in Sources */,
 				BDF60A9825170415005E2297 /* LenghtStringValidator.swift in Sources */,
 				BD0F44CE25CFB3B500B02214 /* MovimientosNC.swift in Sources */,
 				BDF60ABE25170415005E2297 /* UserData.swift in Sources */,
-				BDF60AB525170415005E2297 /* StringExtension.swift in Sources */,
 				BDF60AC725170415005E2297 /* ApiService.swift in Sources */,
 				BDF60A9F25170415005E2297 /* RegexStringValidator.swift in Sources */,
 				BDF60A9E25170415005E2297 /* AlphabeticalStringValidator.swift in Sources */,
