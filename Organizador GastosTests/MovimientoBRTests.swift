@@ -8,7 +8,7 @@
 import XCTest
 @testable import Organizador_Gastos
 
-class MovimientoTests: XCTestCase {
+class MovimientoBRTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
