@@ -40,6 +40,7 @@ class ResumenMovimientosView: UIView {
     private func configurarMontoLbl() {
         montoTotalLbl.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
         montoTotalLbl.translatesAutoresizingMaskIntoConstraints = false
+        montoTotalLbl.text = "N/A"
         
         NSLayoutConstraint.activate([
             montoTotalLbl.centerXAnchor.constraint(equalTo: centerXAnchor),

@@ -21,6 +21,11 @@ class ResumenMovimientosViewTests: XCTestCase {
         sut = nil
     }
     
+    func test_ResumenMovimientosView_NoConfiguracionInicial_MuestraInformacionPorDefecto() {
+        
+        XCTAssertEqual(sut.montoTotalLbl.text, "N/A")
+    }
+    
     func test_ResumenMovimientosView_ConfiguracionInicial_MuestraInformacionDeConfiguracion() {
         sut.configurar(montoTotal: 200.0)
         
