@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D64" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CategoriaDB" representedClassName="CategoriaDB" syncable="YES" codeGenerationType="class">
-        <attribute name="nombre" attributeType="String"/>
-        <relationship name="movimientos" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MovimientoDB" inverseName="categoria" inverseEntity="MovimientoDB"/>
-    </entity>
-    <entity name="MedioPagoDB" representedClassName="MedioPagoDB" syncable="YES" codeGenerationType="class">
-        <attribute name="nombre" attributeType="String"/>
-        <relationship name="movimientos" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MovimientoDB" inverseName="medioPago" inverseEntity="MovimientoDB"/>
-    </entity>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="MovimientoDB" representedClassName="MovimientoDB" syncable="YES" codeGenerationType="class">
         <attribute name="descripcion" attributeType="String"/>
         <attribute name="fecha" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="monto" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="categoria" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CategoriaDB" inverseName="movimientos" inverseEntity="CategoriaDB"/>
-        <relationship name="medioPago" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MedioPagoDB" inverseName="movimientos" inverseEntity="MedioPagoDB"/>
     </entity>
     <elements>
-        <element name="CategoriaDB" positionX="-455.67578125" positionY="-64.66796875" width="128" height="59"/>
-        <element name="MedioPagoDB" positionX="189.54296875" positionY="8.82421875" width="128" height="59"/>
-        <element name="MovimientoDB" positionX="-73.69140625" positionY="-179.09375" width="128" height="104"/>
+        <element name="MovimientoDB" positionX="-73.69140625" positionY="-179.09375" width="128" height="74"/>
     </elements>
 </model>
