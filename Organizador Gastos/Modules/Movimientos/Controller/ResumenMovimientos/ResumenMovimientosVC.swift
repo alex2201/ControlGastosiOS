@@ -12,13 +12,15 @@ class ResumenMovimientosVC: UIViewController {
     typealias DataSource = UITableViewDiffableDataSource<ResumenMovimientosModel.SeccionFecha, Movimiento>
     typealias Snapshot = NSDiffableDataSourceSnapshot<ResumenMovimientosModel.SeccionFecha, Movimiento>
     
+    // MARK: - Variables públicas
     weak var coordinator: MovimientosCoordinator?
-    
     let resumenView: ResumenMovimientosView
-    private var model = ResumenMovimientosModel()
     
+    // MARK: - Variables privadas
+    private var model = ResumenMovimientosModel()
     private lazy var dataSource: DataSource = crearDataSource()
     
+    // MARK: - Métodos públicos
     init(view: ResumenMovimientosView) {
         self.resumenView = view
         super.init(nibName: nil, bundle: nil)
@@ -29,6 +31,7 @@ class ResumenMovimientosVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Ciclo de vida
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +49,7 @@ class ResumenMovimientosVC: UIViewController {
         resumenView.configurar(montoTotal: 1_209_486.23)
     }
     
+    // MARK: - Métodos privados
     private func crearDataSource() -> DataSource {
         let dataSource = DataSource(tableView: resumenView.tablaMovimientos) { (tableView, indexPath, movimiento) -> UITableViewCell? in
             let cell = UITableViewCell()
