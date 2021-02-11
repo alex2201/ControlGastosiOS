@@ -12,9 +12,11 @@ class ResumenMovimientosView: UIView {
     // MARK: Variables públicas
     let montoTotalLbl = UILabel()
     let tablaMovimientos = UITableView(frame: .zero, style: .insetGrouped)
+    let añadirButton = UIBarButtonItem(systemItem: .add)
     
     // MARK: Variables privadas
     private let montoFormatter = StringFormatter.moneyFormatter
+    private let toolbar: UIToolbar = UIToolbar()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,9 +34,11 @@ class ResumenMovimientosView: UIView {
         
         addSubview(montoTotalLbl)
         addSubview(tablaMovimientos)
+        addSubview(toolbar)
         
         configurarMontoLbl()
         configurarTablaMovimientos()
+        configurarToolbar()
     }
     
     private func configurarMontoLbl() {
@@ -54,9 +58,25 @@ class ResumenMovimientosView: UIView {
         
         NSLayoutConstraint.activate([
             tablaMovimientos.topAnchor.constraint(equalTo: montoTotalLbl.bottomAnchor, constant: 24),
-            tablaMovimientos.bottomAnchor.constraint(equalTo: bottomAnchor),
             tablaMovimientos.leadingAnchor.constraint(equalTo: leadingAnchor),
             tablaMovimientos.trailingAnchor.constraint(equalTo: trailingAnchor),
+        ])
+    }
+    
+    private func configurarToolbar() {
+        let toolbarItems: [UIBarButtonItem] = [
+            UIBarButtonItem.flexibleSpace(),
+            añadirButton,
+        ]
+        
+        toolbar.translatesAutoresizingMaskIntoConstraints = false
+        toolbar.setItems(toolbarItems, animated: false)
+        
+        NSLayoutConstraint.activate([
+            toolbar.topAnchor.constraint(equalTo: tablaMovimientos.bottomAnchor),
+            toolbar.bottomAnchor.constraint(equalTo: bottomAnchor),
+            toolbar.leadingAnchor.constraint(equalTo: leadingAnchor),
+            toolbar.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
     }
     
