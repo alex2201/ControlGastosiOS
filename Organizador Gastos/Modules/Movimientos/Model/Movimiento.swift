@@ -56,6 +56,24 @@ struct Movimiento: Hashable {
             completion(movimientos)
         }
     }
+    
+    static func guardarMovimientosEnDB(movimientos: [Movimiento], usando context: NSManagedObjectContext, completion: @escaping (Error?) -> Void) {
+        context.perform {
+            do {
+                movimientos
+                    .forEach({ movimiento in
+                        let movimientoDB = MovimientoDB(context: context)
+                        movimientoDB.descripcion = movimiento.descripcion
+                        movimientoDB.monto = movimiento.monto
+                        movimientoDB.fecha = movimiento.fecha
+                    })
+                try context.save()
+                completion(nil)
+            } catch {
+                completion(error)
+            }
+        }
+    }
 }
 
 extension Movimiento {
