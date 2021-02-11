@@ -8,6 +8,7 @@
 import Foundation
 
 struct ResumenMovimientosModel {
+    
     typealias SeccionFecha = String
     
     // MARK: Variables públicas
