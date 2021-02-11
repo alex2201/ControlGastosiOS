@@ -21,8 +21,9 @@ class MovimientosCoordinator: NSObject, Coordinator {
     }
     
     func start() {
+        let contenedor = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
         let view = ResumenMovimientosView()
-        let vc = ResumenMovimientosVC(view: view)
+        let vc = ResumenMovimientosVC(view: view, contenedor: contenedor)
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: false)
     }
