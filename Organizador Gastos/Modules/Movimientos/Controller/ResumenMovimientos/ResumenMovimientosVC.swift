@@ -40,17 +40,7 @@ class ResumenMovimientosVC: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(resumenView)
-        
-        resumenView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            resumenView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            resumenView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            resumenView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            resumenView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-        ])
-        
-        resumenView.configurar(montoTotal: 1_209_486.23)
+        configurarResumenView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,6 +55,18 @@ class ResumenMovimientosVC: UIViewController {
     }
     
     // MARK: - Métodos privados
+    private func configurarResumenView() {
+        resumenView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            resumenView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            resumenView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            resumenView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            resumenView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+        ])
+        
+        resumenView.configurar(montoTotal: 1_209_486.23)
+    }
     private func crearDataSource() -> DataSource {
         let dataSource = DataSource(tableView: resumenView.tablaMovimientos) { (tableView, indexPath, movimiento) -> UITableViewCell? in
             let cell = UITableViewCell()
