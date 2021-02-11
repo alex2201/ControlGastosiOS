@@ -13,6 +13,25 @@ struct Movimiento: Hashable {
     let monto: Double
     let fecha: Date
     
+    func guardarEnDB(usando context: NSManagedObjectContext, completion: @escaping (Error?) -> Void) {
+        context.perform {
+            let movimientoDB = MovimientoDB(context: context)
+            
+            movimientoDB.descripcion = self.descripcion
+            movimientoDB.monto = self.monto
+            movimientoDB.fecha = self.fecha
+            
+            do {
+                try context.save()
+            } catch {
+                print(error.localizedDescription)
+                completion(error)
+            }
+            
+            completion(nil)
+        }
+    }
+    
     static func dummySet() -> [Movimiento] {
         let dateFormat = "dd/MM/yyyy"
         return [
