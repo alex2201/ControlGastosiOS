@@ -76,6 +76,11 @@ class ResumenMovimientosVC: UIViewController {
     
     private func aplicarSnapshot() {
         if let model = models.last {
+            guard model.secciones.count > 0 else {
+                print("No hay información en el modelo.")
+                print(model)
+                return
+            }
             var snapshot = Snapshot()
             for seccion in model.secciones {
                 snapshot.appendItems(model.movimientosPorSeccion[seccion]!, toSection: seccion)
