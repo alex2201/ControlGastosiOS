@@ -32,7 +32,7 @@ class MovimientosCoordinatorTests: XCTestCase {
     func test_MovimientosCoordinator_RegistrarMovimiento_ControladorActualEsRegistroMovimiento() {
         sut.registrarMovimiento()
         
-        XCTAssertNotNil(sut.navigationController?.viewControllers.last as? RegistroMovimientoVC, "El controlador actual debe ser RegistroMovimientoVC.")
+        XCTAssertNotNil(sut.navigationController?.viewControllers.last as? NuevoMovimiento, "El controlador actual debe ser RegistroMovimientoVC.")
     }
     
     func test_MovimientosCoordinator_VolverAlInicioDespuesDeRegistrarMovimiento_ControladorActualEsResumenMovimientos() {

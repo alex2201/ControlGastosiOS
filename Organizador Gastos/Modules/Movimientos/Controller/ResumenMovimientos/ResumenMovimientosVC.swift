@@ -31,7 +31,9 @@ class ResumenMovimientosVC: UIViewController {
         title = "Resumen"
         
         resumenView.añadirButton.primaryAction = UIAction(handler: { (_) in
-            self.coordinator?.registrarMovimiento()
+            DispatchQueue.main.async {
+                self.coordinator?.registrarMovimiento()
+            }
         })
 
     }
