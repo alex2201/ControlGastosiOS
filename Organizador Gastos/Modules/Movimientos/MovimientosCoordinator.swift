@@ -21,16 +21,16 @@ class MovimientosCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        let contenedor = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
-        let view = ResumenMovimientosView()
-        let vc = ResumenMovimientosVC(view: view, contenedor: contenedor)
-        vc.coordinator = self
+//        let contenedor = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+//        let view = ResumenMovimientosView()
+//        let vc = ResumenMovimientosVC(view: view, contenedor: contenedor)
+//        vc.coordinator = self
+        let vc = NuevoMovimientoVC()
         navigationController?.pushViewController(vc, animated: false)
     }
     
     func registrarMovimiento() {
-        let vc = RegistroMovimientoVC()
-        vc.coordinator = self
+        let vc = NuevoMovimientoVC()
         navigationController?.pushViewController(vc, animated: true)
     }
     
