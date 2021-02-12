@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovimientosNC: UINavigationController {
+class MovimientosNC: NavigationController {
     
     weak var coordinator: MovimientosCoordinator?
     

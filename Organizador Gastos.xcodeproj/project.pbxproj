@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		568A3ED525D6DB4500EC11F6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A3ED425D6DB4500EC11F6 /* NavigationController.swift */; };
 		568AE8D325D5DE34004ED11F /* NuevoMovimientoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AE8D225D5DE34004ED11F /* NuevoMovimientoView.swift */; };
 		568AE8D825D5E4B1004ED11F /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AE8D725D5E4B1004ED11F /* CurrencyTextField.swift */; };
 		569CD6B525D3208900C98E03 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CD6B425D3208900C98E03 /* DateExtension.swift */; };
@@ -118,6 +119,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		568A3ED425D6DB4500EC11F6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		568AE8D225D5DE34004ED11F /* NuevoMovimientoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoMovimientoView.swift; sourceTree = "<group>"; };
 		568AE8D725D5E4B1004ED11F /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		569CD6B425D3208900C98E03 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -242,6 +244,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		568A3ED325D6DB3000EC11F6 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				568A3ED425D6DB4500EC11F6 /* NavigationController.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		569CD6BE25D340FA00C98E03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +654,7 @@
 		BDF60AD5251704AC005E2297 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				568A3ED325D6DB3000EC11F6 /* Misc */,
 				BD884FDA2532CAB500FA0E18 /* Movimientos */,
 			);
 			path = Modules;
@@ -818,6 +829,7 @@
 				BDF60AB625170415005E2297 /* UITapGestureRecognizer.swift in Sources */,
 				BDF609FA2516FFEF005E2297 /* Organizador_Gastos.xcdatamodeld in Sources */,
 				BDF60AA425170415005E2297 /* UtilitiesStyles.swift in Sources */,
+				568A3ED525D6DB4500EC11F6 /* NavigationController.swift in Sources */,
 				BDF60AA625170415005E2297 /* AsyncHttpFetcher.swift in Sources */,
 				BD5B95292545367800B05CE0 /* MovimientosCoordinator.swift in Sources */,
 				BDF60ABC25170415005E2297 /* DesignableTextField.swift in Sources */,
