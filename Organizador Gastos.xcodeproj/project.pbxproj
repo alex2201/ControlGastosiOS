@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		568A3ED525D6DB4500EC11F6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A3ED425D6DB4500EC11F6 /* NavigationController.swift */; };
+		568A3EDD25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A3EDC25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift */; };
 		568AE8D325D5DE34004ED11F /* NuevoMovimientoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AE8D225D5DE34004ED11F /* NuevoMovimientoView.swift */; };
 		568AE8D825D5E4B1004ED11F /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AE8D725D5E4B1004ED11F /* CurrencyTextField.swift */; };
 		569CD6B525D3208900C98E03 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CD6B425D3208900C98E03 /* DateExtension.swift */; };
@@ -120,6 +121,7 @@
 
 /* Begin PBXFileReference section */
 		568A3ED425D6DB4500EC11F6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		568A3EDC25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosProtocols.swift; sourceTree = "<group>"; };
 		568AE8D225D5DE34004ED11F /* NuevoMovimientoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoMovimientoView.swift; sourceTree = "<group>"; };
 		568AE8D725D5E4B1004ED11F /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		569CD6B425D3208900C98E03 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				BD0F44BD25CFB22A00B02214 /* ResumenMovimientosVC.swift */,
+				568A3EDC25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift */,
 			);
 			path = ResumenMovimientos;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 				56EFC32C25D5BF3100511CDF /* UIControlExtension.swift in Sources */,
 				BDF60AAB25170415005E2297 /* CarrouselImageFetcher.swift in Sources */,
 				BD884FCE2532C41700FA0E18 /* Storyboarded.swift in Sources */,
+				568A3EDD25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift in Sources */,
 				56EFC33F25D5BFB700511CDF /* UIControlPublisher.swift in Sources */,
 				BDF60A9625170415005E2297 /* UserDefaultsExtension.swift in Sources */,
 				BDF60A9825170415005E2297 /* LenghtStringValidator.swift in Sources */,
