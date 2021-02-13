@@ -8,7 +8,7 @@
 import UIKit
 
 class MovimientosCoordinator: NSObject, Coordinator {
-        
+    
     var parentCoordinator: Coordinator?
     var childCoordinators: [Coordinator] = []
     var controller: UIViewController
@@ -21,17 +21,20 @@ class MovimientosCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-//        let contenedor = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
-//        let view = ResumenMovimientosView()
-//        let vc = ResumenMovimientosVC(view: view, contenedor: contenedor)
-//        vc.coordinator = self
-        let vc = NuevoMovimientoVC()
-        navigationController?.pushViewController(vc, animated: false)
+        let contenedor = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+        let view = ResumenMovimientosView()
+        let vc = ResumenMovimientosVC(view: view, contenedor: contenedor)
+        vc.coordinator = self
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func registrarMovimiento() {
-        let vc = NuevoMovimientoVC()
-        navigationController?.pushViewController(vc, animated: true)
+        let view = NuevoMovimientoView()
+        let vc = NuevoMovimientoVC(view: view)
+        let navigationController = NavigationController(rootViewController: vc)
+        
+        controller.present(navigationController, animated: true)
     }
     
     func volverAlInicio(animated: Bool = false) {
