@@ -12,7 +12,7 @@ struct ResumenMovimientosModel {
     typealias SeccionFecha = String
     
     // MARK: Variables públicas
-    var movimientosPorSeccion: [SeccionFecha: [Movimiento]] = [:]
+    var movimientosPorSeccion: [SeccionFecha: [MovimientoEntity]] = [:]
     var secciones: [SeccionFecha] = []
     
     // MARK: Variables privadas
@@ -23,25 +23,25 @@ struct ResumenMovimientosModel {
     }()
     
     // MARK: Métodos públicos
-    init(movimientos: [Movimiento] = []) {
+    init(movimientos: [MovimientoEntity] = []) {
         secciones = generarSeccionesPorFecha(usando: movimientos)
         movimientosPorSeccion = generarMovimientosPorSeccions(usandoSecciones: secciones, para: movimientos)
     }
     
-    func configurar(con movimientos: [Movimiento]) -> ResumenMovimientosModel {
+    func configurar(con movimientos: [MovimientoEntity]) -> ResumenMovimientosModel {
         return ResumenMovimientosModel(movimientos: movimientos)
     }
     
     // MARK: Métodos privados
-    private func generarSeccionesPorFecha(usando movimientos: [Movimiento]) -> [SeccionFecha] {
+    private func generarSeccionesPorFecha(usando movimientos: [MovimientoEntity]) -> [SeccionFecha] {
         return Set(movimientos
                     .map({$0.fecha}))
             .sorted(by: { $0 > $1 })
             .map({ dateFormatter.string(from: $0) })
     }
     
-    private func generarMovimientosPorSeccions(usandoSecciones secciones: [SeccionFecha], para movimientos: [Movimiento]) -> [SeccionFecha: [Movimiento]] {
-        var movimientosPorSeccion: [SeccionFecha: [Movimiento]] = [:]
+    private func generarMovimientosPorSeccions(usandoSecciones secciones: [SeccionFecha], para movimientos: [MovimientoEntity]) -> [SeccionFecha: [MovimientoEntity]] {
+        var movimientosPorSeccion: [SeccionFecha: [MovimientoEntity]] = [:]
         
         for seccion in secciones {
             movimientosPorSeccion[seccion] = movimientos

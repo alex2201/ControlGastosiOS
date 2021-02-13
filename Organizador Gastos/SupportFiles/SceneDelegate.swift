@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appWindow.windowScene = windowScene
         
         // Setup coordinator
-        coordinator = MovimientosCoordinator()
+        coordinator = MovimientosDefaultCoordinator()
         coordinator?.start()
         
         // Init window

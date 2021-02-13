@@ -11,8 +11,6 @@ protocol Coordinator: NSObject {
     var parentCoordinator: Coordinator? { get set }
     var childCoordinators: [Coordinator] { get set }
     var controller: UIViewController { get }
-    var navigationController: UINavigationController? { get }
-    var tabBarController: UITabBarController? { get }
     
     func start()
     func finish(completion: (() -> Void)?)

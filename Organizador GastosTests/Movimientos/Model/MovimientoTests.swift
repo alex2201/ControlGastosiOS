@@ -31,10 +31,10 @@ class MovimientoTests: XCTestCase {
     }
     
     func test_Container_GuardaDatosDummy() throws {
-        let movimientos = Movimiento.dummySet()
+        let movimientos = MovimientoEntity.dummySet()
         let expectacion = self.expectation(description: "Espera a guardar cambios en DB.")
         
-        Movimiento.guardarMovimientosEnDB(movimientos: movimientos, usando: context) { (error) in
+        MovimientoEntity.guardarMovimientosEnDB(movimientos: movimientos, usando: context) { (error) in
             
             if let error = error {
                 print(error.localizedDescription)
@@ -50,10 +50,10 @@ class MovimientoTests: XCTestCase {
     }
     
     func test_Container_CargaDatosDummyDesdeDB() throws {
-        let movimientos = Movimiento.dummySet()
+        let movimientos = MovimientoEntity.dummySet()
         let expectacion = self.expectation(description: "Espera a guardar cambios en DB.")
         
-        Movimiento.guardarMovimientosEnDB(movimientos: movimientos, usando: context) { (error) in
+        MovimientoEntity.guardarMovimientosEnDB(movimientos: movimientos, usando: context) { (error) in
             
             if let error = error {
                 print(error.localizedDescription)
@@ -62,9 +62,9 @@ class MovimientoTests: XCTestCase {
                 let movimientosDB = (try? self.obtenerMovimientosDB()) ?? []
                 XCTAssertEqual(movimientos.count, movimientosDB.count)
                 
-                Movimiento.cargarDesdeDB(usando: self.context) { (movimientosDBMetodo) in
+                MovimientoEntity.cargarDesdeDB(usando: self.context) { (movimientosDBMetodo) in
                     XCTAssertEqual(movimientosDBMetodo.count, movimientosDB.count)
-                    XCTAssertEqual(movimientosDBMetodo, movimientosDB.map({ Movimiento(movimiento: $0) }))
+                    XCTAssertEqual(movimientosDBMetodo, movimientosDB.map({ MovimientoEntity(movimiento: $0) }))
                     
                     expectacion.fulfill()
                 }
@@ -76,7 +76,7 @@ class MovimientoTests: XCTestCase {
     
     func test_Container_GuardaMovimiento() throws {
         let dateFormat = "dd/MM/yyyy"
-        let movimientoPrueba = Movimiento(
+        let movimientoPrueba = MovimientoEntity(
             descripcion: "Descripcion 1",
             monto: 1234.56,
             fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
@@ -90,7 +90,7 @@ class MovimientoTests: XCTestCase {
             } else {
                 let movimientosDB = (try? self.obtenerMovimientosDB()) ?? []
                 XCTAssertNotNil(movimientosDB.first)
-                XCTAssertEqual(movimientoPrueba, Movimiento(movimiento: movimientosDB.first!))
+                XCTAssertEqual(movimientoPrueba, MovimientoEntity(movimiento: movimientosDB.first!))
                 expectation.fulfill()
             }
         }

@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-struct Movimiento: Hashable {
+struct MovimientoEntity: Hashable {
     let descripcion: String
     let monto: Double
     let fecha: Date
@@ -32,25 +32,25 @@ struct Movimiento: Hashable {
         }
     }
     
-    static func dummySet() -> [Movimiento] {
+    static func dummySet() -> [MovimientoEntity] {
         let dateFormat = "dd/MM/yyyy"
         return [
-            Movimiento(
+            MovimientoEntity(
                 descripcion: "Descripción del movimiento 1",
                 monto: 523.25,
                 fecha: Date.fromString("23/01/2021", usingFormat: dateFormat)!
             ),
-            Movimiento(
+            MovimientoEntity(
                 descripcion: "Descripción del movimiento 2",
                 monto: 523.25,
                 fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
             ),
-            Movimiento(
+            MovimientoEntity(
                 descripcion: "Descripción del movimiento 1",
                 monto: 523.25,
                 fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
             ),
-            Movimiento(
+            MovimientoEntity(
                 descripcion: "Descripción del movimiento 1",
                 monto: 523.25,
                 fecha: Date.fromString("12/02/2021", usingFormat: dateFormat)!
@@ -58,15 +58,15 @@ struct Movimiento: Hashable {
         ]
     }
     
-    static func cargarDesdeDB(usando context: NSManagedObjectContext, completion: @escaping ([Movimiento]) -> Void) {
+    static func cargarDesdeDB(usando context: NSManagedObjectContext, completion: @escaping ([MovimientoEntity]) -> Void) {
         context.perform {
-            let movimientos: [Movimiento]
+            let movimientos: [MovimientoEntity]
             let request: NSFetchRequest<MovimientoDB> = MovimientoDB.fetchRequest()
             
             do {
                 let movimientosDB = try context.fetch(request)
                 movimientos = movimientosDB
-                    .map({ Movimiento(movimiento: $0) })
+                    .map({ MovimientoEntity(movimiento: $0) })
             } catch {
                 print(error.localizedDescription)
                 movimientos = []
@@ -76,7 +76,7 @@ struct Movimiento: Hashable {
         }
     }
     
-    static func guardarMovimientosEnDB(movimientos: [Movimiento], usando context: NSManagedObjectContext, completion: @escaping (Error?) -> Void) {
+    static func guardarMovimientosEnDB(movimientos: [MovimientoEntity], usando context: NSManagedObjectContext, completion: @escaping (Error?) -> Void) {
         context.perform {
             do {
                 movimientos
@@ -95,7 +95,7 @@ struct Movimiento: Hashable {
     }
 }
 
-extension Movimiento {
+extension MovimientoEntity {
     init(movimiento: MovimientoDB) {
         self.init(
             descripcion: movimiento.descripcion!,

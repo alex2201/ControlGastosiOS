@@ -11,7 +11,7 @@ import XCTest
 class ResumenMovimientosModelTests: XCTestCase {
     
     var sut: ResumenMovimientosModel!
-    let movimientosMock = Movimiento.dummySet()
+    let movimientosMock = MovimientoEntity.dummySet()
     
     override func setUpWithError() throws {
         sut = ResumenMovimientosModel()
@@ -51,26 +51,26 @@ class ResumenMovimientosModelTests: XCTestCase {
             sut.movimientosPorSeccion,
             [
                 "12/02/2021": [
-                    Movimiento(
+                    MovimientoEntity(
                         descripcion: "Descripción del movimiento 1",
                         monto: 523.25,
                         fecha: Date.fromString("12/02/2021", usingFormat: dateFormat)!
                     )
                 ],
                 "23/01/2021": [
-                    Movimiento(
+                    MovimientoEntity(
                         descripcion: "Descripción del movimiento 1",
                         monto: 523.25,
                         fecha: Date.fromString("23/01/2021", usingFormat: dateFormat)!
                     ),
                 ],
                 "19/01/2021": [
-                    Movimiento(
+                    MovimientoEntity(
                         descripcion: "Descripción del movimiento 2",
                         monto: 523.25,
                         fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
                     ),
-                    Movimiento(
+                    MovimientoEntity(
                         descripcion: "Descripción del movimiento 1",
                         monto: 523.25,
                         fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!

@@ -7,7 +7,11 @@
 
 import UIKit
 
-class MovimientosCoordinator: NSObject, Coordinator {
+protocol MovimientosCoordinator: Coordinator {
+    func registrarMovimiento()
+}
+
+class MovimientosDefaultCoordinator: NSObject, MovimientosCoordinator {
     
     var parentCoordinator: Coordinator?
     var childCoordinators: [Coordinator] = []

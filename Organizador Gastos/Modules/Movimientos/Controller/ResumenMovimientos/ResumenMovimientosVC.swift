@@ -10,8 +10,8 @@ import CoreData
 
 class ResumenMovimientosVC: UIViewController {
     
-    typealias DataSource = UITableViewDiffableDataSource<ResumenMovimientosModel.SeccionFecha, Movimiento>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<ResumenMovimientosModel.SeccionFecha, Movimiento>
+    typealias DataSource = UITableViewDiffableDataSource<ResumenMovimientosModel.SeccionFecha, MovimientoEntity>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<ResumenMovimientosModel.SeccionFecha, MovimientoEntity>
     
     // MARK: - Variables públicas
     weak var coordinator: MovimientosCoordinator?
@@ -55,7 +55,7 @@ class ResumenMovimientosVC: UIViewController {
         super.viewDidAppear(animated)
         
         if !hizoCargaDatosInicial {
-            Movimiento.cargarDesdeDB(usando: contenedorDB.viewContext) { (movimientos) in
+            MovimientoEntity.cargarDesdeDB(usando: contenedorDB.viewContext) { (movimientos) in
                 self.models.append(ResumenMovimientosModel(movimientos: movimientos))
                 self.aplicarSnapshot()
             }

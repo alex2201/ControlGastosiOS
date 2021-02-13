@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		568A3ED525D6DB4500EC11F6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A3ED425D6DB4500EC11F6 /* NavigationController.swift */; };
 		568A3EDD25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A3EDC25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift */; };
+		568A3EE825D846E000EC11F6 /* VIPER_Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A3EE725D846E000EC11F6 /* VIPER_Protocols.swift */; };
 		568AE8D325D5DE34004ED11F /* NuevoMovimientoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AE8D225D5DE34004ED11F /* NuevoMovimientoView.swift */; };
 		568AE8D825D5E4B1004ED11F /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AE8D725D5E4B1004ED11F /* CurrencyTextField.swift */; };
 		569CD6B525D3208900C98E03 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CD6B425D3208900C98E03 /* DateExtension.swift */; };
@@ -32,7 +33,7 @@
 		BD0F44CE25CFB3B500B02214 /* MovimientosNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44CD25CFB3B500B02214 /* MovimientosNC.swift */; };
 		BD0F44E625CFB64500B02214 /* ResumenMovimientosViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44E525CFB64500B02214 /* ResumenMovimientosViewTests.swift */; };
 		BD0F44EE25CFB68200B02214 /* ResumenMovimientosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44ED25CFB68200B02214 /* ResumenMovimientosView.swift */; };
-		BD0F44F725CFB71C00B02214 /* Movimiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44F625CFB71C00B02214 /* Movimiento.swift */; };
+		BD0F44F725CFB71C00B02214 /* MovimientoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F44F625CFB71C00B02214 /* MovimientoEntity.swift */; };
 		BD39509F251723EB00B45D03 /* SentenceSequenceStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39509E251723EB00B45D03 /* SentenceSequenceStringValidator.swift */; };
 		BD5B95292545367800B05CE0 /* MovimientosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B95282545367800B05CE0 /* MovimientosCoordinator.swift */; };
 		BD884FC92532C36200FA0E18 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD884FC82532C36200FA0E18 /* Coordinator.swift */; };
@@ -122,6 +123,7 @@
 /* Begin PBXFileReference section */
 		568A3ED425D6DB4500EC11F6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		568A3EDC25D835AE00EC11F6 /* ResumenMovimientosProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosProtocols.swift; sourceTree = "<group>"; };
+		568A3EE725D846E000EC11F6 /* VIPER_Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_Protocols.swift; sourceTree = "<group>"; };
 		568AE8D225D5DE34004ED11F /* NuevoMovimientoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoMovimientoView.swift; sourceTree = "<group>"; };
 		568AE8D725D5E4B1004ED11F /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		569CD6B425D3208900C98E03 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -145,7 +147,7 @@
 		BD0F44CD25CFB3B500B02214 /* MovimientosNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovimientosNC.swift; sourceTree = "<group>"; };
 		BD0F44E525CFB64500B02214 /* ResumenMovimientosViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosViewTests.swift; sourceTree = "<group>"; };
 		BD0F44ED25CFB68200B02214 /* ResumenMovimientosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenMovimientosView.swift; sourceTree = "<group>"; };
-		BD0F44F625CFB71C00B02214 /* Movimiento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimiento.swift; sourceTree = "<group>"; };
+		BD0F44F625CFB71C00B02214 /* MovimientoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientoEntity.swift; sourceTree = "<group>"; };
 		BD39509E251723EB00B45D03 /* SentenceSequenceStringValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceSequenceStringValidator.swift; sourceTree = "<group>"; };
 		BD5B95282545367800B05CE0 /* MovimientosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientosCoordinator.swift; sourceTree = "<group>"; };
 		BD884FC82532C36200FA0E18 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -309,7 +311,7 @@
 		BD0F44F525CFB70E00B02214 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BD0F44F625CFB71C00B02214 /* Movimiento.swift */,
+				BD0F44F625CFB71C00B02214 /* MovimientoEntity.swift */,
 				569CD6B925D33B0A00C98E03 /* ResumenMovimientosModel.swift */,
 			);
 			path = Model;
@@ -319,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				BD884FC82532C36200FA0E18 /* Coordinator.swift */,
+				568A3EE725D846E000EC11F6 /* VIPER_Protocols.swift */,
 				BD884FCD2532C41700FA0E18 /* Storyboarded.swift */,
 			);
 			path = Misc;
@@ -817,7 +820,7 @@
 				BD0F44EE25CFB68200B02214 /* ResumenMovimientosView.swift in Sources */,
 				BDF60AA825170415005E2297 /* ImageFetcher.swift in Sources */,
 				BDF60A9525170415005E2297 /* Session.swift in Sources */,
-				BD0F44F725CFB71C00B02214 /* Movimiento.swift in Sources */,
+				BD0F44F725CFB71C00B02214 /* MovimientoEntity.swift in Sources */,
 				BDF60AB925170415005E2297 /* TextFieldValidator.swift in Sources */,
 				56EFC33E25D5BFB700511CDF /* CombineCompatible.swift in Sources */,
 				BDF60AB225170415005E2297 /* UIScrollView.swift in Sources */,
@@ -843,6 +846,7 @@
 				BDF60AC825170415005E2297 /* ApiQueryManager.swift in Sources */,
 				BDF60A9A25170415005E2297 /* DecimalStringValidator.swift in Sources */,
 				569CD6BA25D33B0A00C98E03 /* ResumenMovimientosModel.swift in Sources */,
+				568A3EE825D846E000EC11F6 /* VIPER_Protocols.swift in Sources */,
 				BDF60AC425170415005E2297 /* NibLoadable.swift in Sources */,
 				BDF60A9D25170415005E2297 /* NotEmptyStringValidator.swift in Sources */,
 				BDF60A9B25170415005E2297 /* TelephoneStringValidator.swift in Sources */,
