@@ -18,6 +18,7 @@ protocol Coordinator: NSObject {
     func finish(completion: (() -> Void)?)
     func add(_ child: Coordinator)
     func remove(_ child: Coordinator)
+    func printDescription(indent: Int)
 }
 
 extension Coordinator {
@@ -29,23 +30,42 @@ extension Coordinator {
     }
     
     func add(_ child: Coordinator){
-        print("------Coordinator add before")
-        print(childCoordinators.count)
+        print("<-Add")
+        print("Coordinator: \(type(of: self))")
+        print("Adding child coordinator...")
+        print("\(type(of: child))")
         childCoordinators.append(child)
         child.parentCoordinator = self
-        print("------Coordinator add after")
-        print(childCoordinators.count)
+        print("Child count: \(childCoordinators.count)")
+        print("Add->")
     }
     
     func remove(_ child: Coordinator) {
-        print("------Coordinator remove before")
-        print(childCoordinators.count)
+        print("<-Remove")
+        print("Coordinator: \(type(of: self))")
+        print("Removing child coordinator...")
+        print("\(type(of: child))")
         childCoordinators.removeAll(where: { $0 == child })
-        print("------Coordinator remove after")
-        print(childCoordinators.count)
+        print("Child count: \(childCoordinators.count)")
+        print("Remove->")
     }
     
     func finish(completion: (() -> Void)? = nil) {
         parentCoordinator?.remove(self)
+    }
+    
+    func printDescription(indent: Int = 0) {
+        print("<\(String(repeating: "-", count: (indent + 1) * 2))")
+        print("Coordinator: \(type(of: self))")
+        print(self)
+        if childCoordinators.count > 0 {
+            print("Childs:")
+            for child in self.childCoordinators {
+                child.printDescription(indent: indent + 1)
+            }
+        } else {
+            print("No childs")
+        }
+        print("\(String(repeating: "-", count: (indent + 1) * 2))>")
     }
 }
