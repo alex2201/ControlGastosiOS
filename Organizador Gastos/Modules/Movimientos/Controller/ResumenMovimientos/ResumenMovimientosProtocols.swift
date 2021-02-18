@@ -10,57 +10,56 @@ import Foundation
 import UIKit
 
 // MARK: View Input (View -> Presenter)
-protocol ViewToPresenterResumenMovimientosProtocol: ViewToPresenterProtocol {
+protocol ViewToPresenterResumenMovimientosProtocol {
     
     var view: PresenterToViewResumenMovimientosProtocol? { get set }
-    var interactor: PresenterToInteractorResumenMovimientosProtocol? { get set }
+    var interactor: ResumenMovimientosPresenterToInteractorProtocol? { get set }
     var coordinator: MovimientosCoordinator? { get set }
     
     func obtenerMovimientos()
-}
-
-class PresenterMock: ViewToPresenterResumenMovimientosProtocol {
-
-    var view: PresenterToViewResumenMovimientosProtocol?
-    var interactor: PresenterToInteractorResumenMovimientosProtocol?
-    var coordinator: MovimientosCoordinator?
-    
-    func obtenerMovimientos() {
-        coordinator?.registrarMovimiento()
-    }
-    
+    func nuevoMovimiento()
 }
 
 // MARK: View Output (Presenter -> View)
-protocol PresenterToViewResumenMovimientosProtocol: PresenterToViewProtocol {
+protocol PresenterToViewResumenMovimientosProtocol: PresenterToViewProtocol, Loadable {
     func presentar(movimientos: [MovimientoEntity])
-    func presentarIndicadorCarga(completion: (() -> Void)?)
-    func ocultarIndicadorCarga(completion: (() -> Void)?)
 }
 
 // MARK: Interactor Input (Presenter -> Interactor)
-protocol PresenterToInteractorResumenMovimientosProtocol: PresenterToInteractorProtocol {
-    var presenter: InteractorMovimientosToPresenterProtocol? { get set }
+protocol ResumenMovimientosPresenterToInteractorProtocol {
+    var presenter: ResumenMovimientosInteractorToPresenterProtocol? { get set }
     
-    func obtenerMovimientos(de fechaInicio: Date?, a fechaFin: Date?, conDescripcion descripcion: String?)
-    func guardar(movimiento: MovimientoEntity)
+    func obtenerMovimientos(despuesDe fechaInicio: Date?, antesDe fechaFin: Date?, conDescripcion descripcion: String?)
 }
 
-extension PresenterToInteractorResumenMovimientosProtocol {
+extension ResumenMovimientosPresenterToInteractorProtocol {
     func obtenerMovimientos() {
-        obtenerMovimientos(de: nil, a: nil, conDescripcion: nil)
+        obtenerMovimientos(despuesDe: nil, antesDe: nil, conDescripcion: nil)
     }
     
-    func obtenerMovimientos(de fechaInicio: Date, a fechaFin: Date) {
-        obtenerMovimientos(de: fechaInicio, a: fechaFin, conDescripcion: nil)
+    func obtenerMovimientos(de fecha: Date) {
+        obtenerMovimientos(despuesDe: fecha, antesDe: fecha, conDescripcion: nil)
+    }
+    
+    func obtenerMovimientos(despuesDe fechaInicio: Date) {
+        obtenerMovimientos(despuesDe: fechaInicio, antesDe: nil, conDescripcion: nil)
+    }
+    
+    func obtenerMovimientos(antesDe fechaFin: Date) {
+        obtenerMovimientos(despuesDe: nil, antesDe: fechaFin, conDescripcion: nil)
+    }
+    
+    func obtenerMovimientos(despuesDe fechaInicio: Date, antesDe fechaFin: Date) {
+        obtenerMovimientos(despuesDe: fechaInicio, antesDe: fechaFin, conDescripcion: nil)
     }
     
     func obtenerMovimientos(conDescripcion descripcion: String) {
-        obtenerMovimientos(de: nil, a: nil, conDescripcion: descripcion)
+        obtenerMovimientos(despuesDe: nil, antesDe: nil, conDescripcion: descripcion)
     }
 }
 
 // MARK: Interactor Output (Interactor -> Presenter)
-protocol InteractorMovimientosToPresenterProtocol {
-    func interactor(resultadoObtenerMovimientos resultado: Result<[MovimientoEntity], Error>)
+protocol ResumenMovimientosInteractorToPresenterProtocol: class {
+    func interactor(recibioMovimientos movimientos: [MovimientoEntity])
+    func interactor(recibioError error: String)
 }

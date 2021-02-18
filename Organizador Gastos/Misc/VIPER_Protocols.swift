@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - ViewToPresenterProtocol
+// MARK: - ViewToPresenterProtocol (View -> Presenter)
 protocol ViewToPresenterProtocol {
     associatedtype V
     associatedtype I
@@ -18,7 +18,7 @@ protocol ViewToPresenterProtocol {
     var coordinator: C? { get set }
 }
 
-// MARK: - PresenterToViewProtocol
+// MARK: - PresenterToViewProtocol (Presenter -> View)
 protocol PresenterToViewProtocol: UIViewController {
     func presentar(aviso: String)
 }
@@ -30,12 +30,12 @@ extension PresenterToViewProtocol {
     }
 }
 
-// MARK: - PresenterToInteractorProtocol
+// MARK: - PresenterToInteractorProtocol (Presenter -> Interactor)
 protocol PresenterToInteractorProtocol {
     var presenter: InteractorToPresenterProtocol? { get set }
 }
 
-// MARK: - InteractorMovimientosToPresenterProtocol
+// MARK: - InteractorMovimientosToPresenterProtocol (Interactor -> Presenter)
 protocol InteractorToPresenterProtocol {
     
 }

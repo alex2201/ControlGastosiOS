@@ -36,23 +36,23 @@ struct MovimientoEntity: Hashable {
         let dateFormat = "dd/MM/yyyy"
         return [
             MovimientoEntity(
-                descripcion: "Descripción del movimiento 1",
+                descripcion: "Despensa",
                 monto: 523.25,
                 fecha: Date.fromString("23/01/2021", usingFormat: dateFormat)!
             ),
             MovimientoEntity(
-                descripcion: "Descripción del movimiento 2",
-                monto: 523.25,
+                descripcion: "Papas",
+                monto: 41.23,
                 fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
             ),
             MovimientoEntity(
-                descripcion: "Descripción del movimiento 1",
-                monto: 523.25,
+                descripcion: "Barra de sonido",
+                monto: 1234.53,
                 fecha: Date.fromString("19/01/2021", usingFormat: dateFormat)!
             ),
             MovimientoEntity(
-                descripcion: "Descripción del movimiento 1",
-                monto: 523.25,
+                descripcion: "Macbook Pro",
+                monto: 937512.93,
                 fecha: Date.fromString("12/02/2021", usingFormat: dateFormat)!
             ),
         ]
